@@ -9950,13 +9950,34 @@ textarea.form-control {
   display: flex;
   flex-direction: column;
 }
-.service-card h3 {
+
+.service-card1 {
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent dark background */
+  border-radius: 10px;
+  border: 2px solid #fff;          /* white border */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.service-card1 h3 {
   color: #fff; /* White heading */
   font-weight: 600;
 }
 
-.service-card p {
+.service-card1 p {
   color: #f8f9fa; /* Light grey for readability */
   font-size: 14px;
   line-height: 1.6;
 }
+
+
+
+.service-card1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
