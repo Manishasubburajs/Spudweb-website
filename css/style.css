@@ -9942,3 +9942,21 @@ textarea.form-control {
         @media(max-width:600px){
             .services-icons-section{gap:36px;}
         }
+        .service-card {
+  background: #323edd !important;
+  color: #fff !important;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.service-card h3 {
+  color: #fff; /* White heading */
+  font-weight: 600;
+}
+
+.service-card p {
+  color: #f8f9fa; /* Light grey for readability */
+  font-size: 14px;
+  line-height: 1.6;
+}
