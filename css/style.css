@@ -9977,7 +9977,42 @@ textarea.form-control {
 
 
 .service-card1:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+   transform: translateY(-5px);
+   box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Logo Scrolling Section */
+.logo-scroll-section {
+  background: #f8f9fa;
+  padding: 3rem 0;
+}
+
+.logo-scroll-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.logo-scroll-track {
+  display: flex;
+  animation: scroll-logos 20s linear infinite;
+  width: calc(200px * 14); /* Adjust based on number of logos */
+}
+
+.logo-item {
+  width: 150px;
+  height: 80px;
+  object-fit: contain;
+  margin: 0 20px;
+  flex-shrink: 0;
+}
+
+@keyframes scroll-logos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 

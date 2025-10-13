@@ -60,6 +60,29 @@
 			}
 		});
 
+		$('.hero-carousel').owlCarousel({
+			autoplay: true,
+			autoHeight: true,
+			loop: true,
+			items:1,
+			margin: 0,
+			stagePadding: 0,
+			nav: true,
+			dots: true,
+			navText: ['<span class="fa fa-chevron-left">', '<span class="fa fa-chevron-right">'],
+			responsive:{
+				0:{
+					items: 1
+				},
+				600:{
+					items: 1
+				},
+				1000:{
+					items: 1
+				}
+			}
+		});
+
 	};
 	carousel();
 
