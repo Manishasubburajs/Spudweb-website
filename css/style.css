@@ -10217,6 +10217,12 @@ textarea.form-control {
   
   /* Medium screens (tablets) */
   @media (min-width: 576px) and (max-width: 767.98px) {
+    .hero-wrap .item {
+      height: 350px !important;
+    }
+    .hero-wrap .overlay {
+      height: 350px !important;
+    }
     .hero-title {
       font-size: 2.5rem;
     }
@@ -10305,6 +10311,12 @@ textarea.form-control {
     .service-card {
       margin-bottom: 30px;
     }
+    .hero-wrap .item {
+      height: 400px !important;
+    }
+    .hero-wrap .overlay {
+      height: 400px !important;
+    }
   }
   
   /* Extra large screens */
@@ -10314,6 +10326,12 @@ textarea.form-control {
     }
     .services-icons-section {
       gap: 100px;
+    }
+    .hero-wrap .item {
+      height: 500px !important;
+    }
+    .hero-wrap .overlay {
+      height: 500px !important;
     }
   }
   
@@ -10330,6 +10348,12 @@ textarea.form-control {
       font-size: 3.5rem;
       max-width: 800px;
       margin: 0 auto;
+    }
+    .hero-wrap .item {
+      height: 600px !important;
+    }
+    .hero-wrap .overlay {
+      height: 600px !important;
     }
     .service-card {
       padding: 40px;
@@ -10574,10 +10598,10 @@ textarea.form-control {
       background-size: cover !important;
       background-position: center center !important;
       background-attachment: scroll !important;
-      height: 450px !important;
+      height: 400px !important;
     }
     .hero-wrap .overlay {
-      height: 100% !important;
+      height: 400px !important;
     }
     .hero-wrap .container {
       position: relative;
