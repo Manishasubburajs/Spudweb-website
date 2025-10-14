@@ -10570,6 +10570,19 @@ textarea.form-control {
     .hero-wrap .slider-text {
       padding: 60px 30px;
     }
+    .hero-wrap .item {
+      background-size: cover !important;
+      background-position: center center !important;
+      background-attachment: scroll !important;
+      height: 450px !important;
+    }
+    .hero-wrap .overlay {
+      height: 100% !important;
+    }
+    .hero-wrap .container {
+      position: relative;
+      z-index: 2;
+    }
     /* Tablet services */
     .service-card {
       padding: 25px;
