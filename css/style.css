@@ -10218,10 +10218,10 @@ textarea.form-control {
   /* Medium screens (tablets) */
   @media (min-width: 576px) and (max-width: 767.98px) {
     .hero-wrap .item {
-      height: 500px !important;
+      height: 600px !important;
     }
     .hero-wrap .overlay {
-      height: 500px !important;
+      height: 600px !important;
     }
     .hero-title {
       font-size: 2.5rem;
@@ -10312,10 +10312,10 @@ textarea.form-control {
       margin-bottom: 30px;
     }
     .hero-wrap .item {
-      height: 400px !important;
+      height: 600px !important;
     }
     .hero-wrap .overlay {
-      height: 400px !important;
+      height: 600px !important;
     }
   }
   
@@ -10328,10 +10328,10 @@ textarea.form-control {
       gap: 100px;
     }
     .hero-wrap .item {
-      height: 500px !important;
+      height: 600px !important;
     }
     .hero-wrap .overlay {
-      height: 500px !important;
+      height: 600px !important;
     }
   }
   
@@ -10598,10 +10598,10 @@ textarea.form-control {
       background-size: cover !important;
       background-position: center center !important;
       background-attachment: scroll !important;
-      height: 400px !important;
+      height: 600px !important;
     }
     .hero-wrap .overlay {
-      height: 400px !important;
+      height: 600px !important;
     }
     .hero-wrap .container {
       position: relative;
