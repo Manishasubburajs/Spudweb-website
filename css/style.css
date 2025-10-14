@@ -10218,10 +10218,10 @@ textarea.form-control {
   /* Medium screens (tablets) */
   @media (min-width: 576px) and (max-width: 767.98px) {
     .hero-wrap .item {
-      height: 350px !important;
+      height: 500px !important;
     }
     .hero-wrap .overlay {
-      height: 350px !important;
+      height: 500px !important;
     }
     .hero-title {
       font-size: 2.5rem;
