@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spudweb - Digital Infra</title>
+    <title>Spudweb - Contact Us</title>
 
     <!-- Bootstrap & Icons -->
     <link
@@ -15,121 +15,17 @@
       rel="stylesheet"
     />
 
-    <!-- AOS Animation Library -->
+    <!-- Font Awesome CDN -->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
 
     <link rel="stylesheet" href="css/style1.css" />
-
     <style>
-      /* ===== White background for main content ===== */
+      /* White background for main content */
       .main-content {
         background-color: #ffffff;
-        padding-top: 80px; /* space below fixed navbar */
-      }
-
-      /* ===== HERO SECTION ===== */
-      .hero-section {
-        background-color: #ffffff !important;
-        color: #0a1f62;
-        text-align: center;
-        padding: 100px 20px 60px;
-        animation: fadeInUp 1s ease-in-out;
-      }
-
-      .hero-section h1 {
-        font-weight: 700;
-        font-size: 2.8rem;
-      }
-
-      .hero-section p {
-        font-size: 1.1rem;
-        color: #333;
-        max-width: 700px;
-        margin: 15px auto 0;
-      }
-
-      /* ===== Contact Info Cards ===== */
-      .contact-info {
-        background: #ffffff;
-        border-radius: 15px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-        padding: 40px 20px;
-        transition: all 0.4s ease;
-      }
-
-      .contact-info:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-      }
-
-      .contact-icon {
-        font-size: 2.3rem;
-        color: #007bff;
-        margin-bottom: 12px;
-        transition: transform 0.4s ease;
-      }
-
-      .contact-info:hover .contact-icon {
-        transform: scale(1.2) rotate(5deg);
-      }
-
-      /* ===== Contact Form ===== */
-      .contact-form {
-        background: #ffffff;
-        border-radius: 15px;
-        padding: 35px;
-        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
-        animation: fadeInUp 1.2s ease;
-      }
-
-      .contact-form input,
-      .contact-form textarea {
-        border-radius: 8px;
-        border: 1px solid #ccc;
-      }
-
-      .contact-form input:focus,
-      .contact-form textarea:focus {
-        border-color: #00bcd4;
-        box-shadow: 0 0 0 0.2rem rgba(0, 188, 212, 0.25);
-      }
-
-      .btn-gradient {
-        background: linear-gradient(45deg, #007bff, #00bcd4);
-        color: #fff;
-        border: none;
-        border-radius: 8px;
-        padding: 10px 25px;
-        transition: all 0.3s ease;
-      }
-
-      .btn-gradient:hover {
-        transform: scale(1.05);
-        background: linear-gradient(45deg, #00bcd4, #007bff);
-      }
-
-      /* ===== Map Styling ===== */
-      .map-container {
-        border-radius: 15px;
-        overflow: hidden;
-        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-        height: 100%;
-        animation: fadeInUp 1.5s ease;
-      }
-
-      /* ===== Animations ===== */
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
       }
     </style>
   </head>
@@ -145,84 +41,98 @@
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
         >
-          <i class="fa fa-bars"></i>
+          <i class="fa-solid fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-            <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- MAIN CONTENT -->
-    <main class="main-content">
-      <!-- HERO -->
-      <section class="hero-section" data-aos="fade-up">
-        <h1>Get in Touch with Us</h1>
-        <p>
-          We’d love to hear from you — whether you’re looking for IT solutions,
-          partnerships, or just want to say hello.
-        </p>
+    <!-- ================= Main Content ================= -->
+    <div class="main-content">
+      <!-- ================= Contact Us Section ================= -->
+      <section class="contact-section text-center py-5">
+        <div class="container">
+          <h1 class="section-title" data-aos="fade-down">
+            Get in Touch with Us
+          </h1>
+          <p class="section-subtitle" data-aos="fade-up">
+            We'd love to hear from you — whether you're looking for IT solutions, partnerships, or just want to say hello.
+          </p>
+        </div>
       </section>
 
-      <!-- CONTACT INFO -->
+      <!-- ================= Contact Info Cards ================= -->
       <section class="py-5">
         <div class="container">
           <div class="row g-4 text-center">
             <div class="col-md-4" data-aos="zoom-in">
-              <div class="contact-info h-100">
-                <div class="contact-icon "><i class="fa-solid fa-location-dot"></i></div>
-                <h5 class="fw-bold">Address</h5>
-                <p><a href="tel:+919840065650" class="text-decoration-none">1 Rajambal Street, T Nagar,<br />Near Hindi Prachar Sabha, Chennai 600017</a></p>
-                
+              <div class="contact-info-box">
+                <i class="fa-solid fa-location-dot"></i>
+                <h5>Address</h5>
+                <p>1 Rajambal Street, T Nagar,<br />Near Hindi Prachar Sabha, Chennai 600017</p>
               </div>
             </div>
 
             <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-              <div class="contact-info h-100">
-                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
-                <h5 class="fw-bold">Phone</h5>
-                <p><a href="tel:+919840065650" class="text-decoration-none">+91 98400-65650</a></p>
+              <div class="contact-info-box">
+                <i class="fa-solid fa-phone"></i>
+                <h5>Phone</h5>
+                <p><a href="tel:+919840065650">+91 98400-65650</a></p>
               </div>
             </div>
 
             <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-              <div class="contact-info h-100">
-                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
-                <h5 class="fw-bold">Email</h5>
-                <p>
-                  <a href="mailto:info@spudweb.in" class="text-decoration-none">info@spudweb.in</a>
-                </p>
+              <div class="contact-info-box">
+                <i class="fa-solid fa-envelope"></i>
+                <h5>Email</h5>
+                <p><a href="mailto:info@spudweb.in">info@spudweb.in</a></p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- CONTACT FORM + MAP -->
-      <section class="py-5" data-aos="fade-up">
+      <!-- ================= Send Us a Message Section ================= -->
+      <section class="py-5">
         <div class="container">
-          <h2 class="text-center fw-bold mb-5" style="color: #0a1f62;">Send Us a Message</h2>
+          <h2 class="section-title mb-5" data-aos="fade-up">
+            Send Us a Message
+          </h2>
           <div class="row g-5 align-items-stretch">
-            <!-- Contact Form -->
-            <div class="col-lg-6" data-aos="fade-right">
+             <!-- Contact Form (Right Side) -->
+            <div class="col-lg-6" data-aos="fade-left">
               <div class="contact-form">
                 <form>
                   <div class="mb-3">
-                    <label class="form-label fw-semibold">Full Name</label>
-                    <input type="text" class="form-control" placeholder="Enter your name" />
+                    <label class="form-label fw-semibold">Name</label>
+                    <input type="text" class="form-control" placeholder="Enter your name" required />
                   </div>
                   <div class="mb-3">
-                    <label class="form-label fw-semibold">Email Address</label>
-                    <input type="email" class="form-control" placeholder="Enter your email" />
+                    <label class="form-label fw-semibold">Email</label>
+                    <input type="email" class="form-control" placeholder="Enter your email" required />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label fw-semibold">Subject</label>
+                    <input type="text" class="form-control" placeholder="Enter subject" required />
                   </div>
                   <div class="mb-3">
                     <label class="form-label fw-semibold">Message</label>
-                    <textarea class="form-control" rows="4" placeholder="Your message..."></textarea>
+                    <textarea class="form-control" rows="4" placeholder="Your message..." required></textarea>
                   </div>
                   <div class="text-center">
                     <button type="submit" class="btn btn-gradient mt-2">Send Message</button>
@@ -230,10 +140,9 @@
                 </form>
               </div>
             </div>
-
-            <!-- Google Map -->
-            <div class="col-lg-6" data-aos="fade-left">
-              <div class="map-container">
+            <!-- Google Map (Left Side) -->
+            <div class="col-lg-6" data-aos="fade-right">
+              <div class="contact-map">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.123456789!2d80.243123!3d13.067123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266d1234567%3A0xabcdef1234567890!2s1+Rajambal+Street%2C+T+Nagar%2C+Chennai+600017!5e0!3m2!1sen!2sin!4v1695567890123"
                   width="100%"
@@ -245,13 +154,15 @@
                 ></iframe>
               </div>
             </div>
+
+           
           </div>
         </div>
       </section>
-    </main>
+    </div>
 
-    <!-- FOOTER -->
-   <footer
+    <!-- Footer -->
+     <footer
       class="footer-section text-white py-5"
       style="background-color: #0b1e36"
     >
@@ -323,19 +234,19 @@
             <h5 class="fw-bold mb-3 text-uppercase">IT Solutions</h5>
             <ul class="list-unstyled">
               <li>
-                <a href="#" class="footer-link">Components</a>
+                <a href="" class="footer-link">Components</a>
               </li>
-              <li><a href="#" class="footer-link">Cloud</a></li>
+              <li><a href="" class="footer-link">Cloud</a></li>
               <li>
-                <a href="#" class="footer-link">Consulting</a>
+                <a href="" class="footer-link">Consulting</a>
               </li>
               <li>
-                <a href="#" class="footer-link"
+                <a href="" class="footer-link"
                   >Cyber Security</a
                 >
               </li>
               <li>
-                <a href="#" class="footer-link">Connectivity</a>
+                <a href="" class="footer-link">Connectivity</a>
               </li>
             </ul>
           </div>
@@ -375,21 +286,110 @@
         </div>
       </div>
     </footer>
+
+    <!-- FLOATING CONTACT WIDGET -->
+    <div class="floating-icons" id="floatingContacts" aria-hidden="false">
+      <!-- Phone -->
+      <div class="float-item" data-type="phone" data-open="false">
+        <div class="contact-pill" aria-hidden="true">
+          <a class="contact-link" href="tel:+919840065650">+91 98400-65650</a>
+        </div>
+        <button class="float-btn" aria-label="Call us" type="button">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <!-- Email -->
+      <div class="float-item" data-type="email" data-open="false">
+        <div class="contact-pill" aria-hidden="true">
+          <a class="contact-link" href="mailto:info@spudweb.in">info@spudweb.in</a>
+        </div>
+        <button class="float-btn" aria-label="Email us" type="button">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      /* FLOATING CONTACT WIDGET BEHAVIOUR */
+      (function () {
+        const container = document.getElementById("floatingContacts");
+        if (!container) return;
+        const items = Array.from(container.querySelectorAll(".float-item"));
+
+        function toggleItem(item, open) {
+          if (open) {
+            item.classList.add("open");
+            item.setAttribute("data-open", "true");
+            const pill = item.querySelector(".contact-pill");
+            if (pill) pill.setAttribute("aria-hidden", "false");
+          } else {
+            item.classList.remove("open");
+            item.setAttribute("data-open", "false");
+            const pill = item.querySelector(".contact-pill");
+            if (pill) pill.setAttribute("aria-hidden", "true");
+          }
+        }
+
+        function collapseAll(except = null) {
+          items.forEach((it) => {
+            if (it !== except) toggleItem(it, false);
+          });
+        }
+
+        items.forEach((item) => {
+          const btn = item.querySelector(".float-btn");
+          const pill = item.querySelector(".contact-pill");
+          const link = item.querySelector(".contact-link");
+
+          btn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const isOpen = item.getAttribute("data-open") === "true";
+            if (isOpen) {
+              toggleItem(item, false);
+            } else {
+              collapseAll(item);
+              toggleItem(item, true);
+            }
+          });
+
+          if (link) {
+            link.addEventListener("click", (ev) => {
+              setTimeout(() => collapseAll(), 400);
+            });
+          }
+
+          pill.addEventListener("click", (ev) => {
+            if (link) {
+              window.location.href = link.getAttribute("href");
+            }
+          });
+        });
+
+        document.addEventListener("click", (ev) => {
+          if (!ev.target.closest("#floatingContacts")) {
+            collapseAll();
+          }
+        });
+
+        document.addEventListener("keydown", (ev) => {
+          if (ev.key === "Escape") collapseAll();
+        });
+
+        window.addEventListener("load", () => {
+          container.style.transition =
+            "transform 420ms ease, opacity 420ms ease";
+          container.style.transform = "translateY(6px)";
+          container.style.opacity = "1";
+        });
+      })();
+    </script>
+
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- AOS JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000,
-        once: true,
-        easing: "ease-in-out",
-      });
-    </script>
   </body>
 </html>
