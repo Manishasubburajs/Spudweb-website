@@ -51,6 +51,8 @@ body {
 #heroCarousel {
   position: relative;
   overflow: hidden;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 /* Each carousel item */
