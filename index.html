@@ -1,270 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SPUDWEB - Digital Infra</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spudweb - Digital Infra</title>
 
+    <!-- Bootstrap & Icons -->
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
       rel="stylesheet"
     />
 
+    <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
 
-    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style1.css" />
 
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" />
-
-    <link rel="stylesheet" href="css/flaticon.css" />
-    <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <div class="wrap">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-12 col-md d-flex align-items-center">
-            <p class="mb-0 phone">
-              <span class="mailus">Phone:</span>
-              <a href="tel:+919840065650">+91 98400-65650</a> |
-              <span class="mailus">Email:</span>
-              <a href="mailto:info@spudweb.in">info@spudweb.in</a>
-            </p>
-          </div>
-          <div class="col-12 col-md d-flex justify-content-md-end">
-            <div class="social-media">
-              <p class="mb-0 d-flex">
-                <a
-                  href="https://www.facebook.com/"
-                  class="d-flex align-items-center justify-content-center"
-                  ><span class="fa fa-facebook"
-                    ><i class="sr-only">Facebook</i></span
-                  ></a
-                >
-                <a
-                  href="https://x.com/"
-                  class="d-flex align-items-center justify-content-center"
-                  ><span class="fa fa-twitter"
-                    ><i class="sr-only">Twitter</i></span
-                  ></a
-                >
-                <a
-                  href="https://www.instagram.com/"
-                  class="d-flex align-items-center justify-content-center"
-                  ><span class="fa fa-instagram"
-                    ><i class="sr-only">Instagram</i></span
-                  ></a
-                >
-                <a
-                  href="https://in.linkedin.com/"
-                  class="d-flex align-items-center justify-content-center"
-                  ><span class="fa fa-linkedin"
-                    ><i class="sr-only">LinkedIn</i></span
-                  ></a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <nav
-      class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
-      id="ftco-navbar"
-    >
-      <div class="container">
-        <a class="navbar-brand ml-2" href="index.html"><span>SPUDWEB</span></a>
+        <a class="navbar-brand" href="#">SPUDWEB</a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler text-white"
           type="button"
-          data-toggle="collapse"
-          data-target="#ftco-nav"
-          aria-controls="ftco-nav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
         >
-          <span class="oi oi-menu"></span> Menu
+          <i class="fa fa-bars"></i>
         </button>
-
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item active">
-              <a href="index.html" class="nav-link">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="services.html" class="nav-link">Services</a>
-            </li>
-            <!-- <li class="nav-item">
-              <a href="cases.html" class="nav-link">Case Study</a>
-            </li>
-            <li class="nav-item">
-              <a href="blog.html" class="nav-link">Blog</a>
-            </li> -->
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact us</a>
-            </li>
-            <!-- <li class="nav-item cta">
-              <a href="#" class="nav-link">Free Consultation</a>
-            </li> -->
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- END nav -->
 
-    <div class="hero-wrap hero-wrap-2">
-      <div class="owl-carousel hero-carousel">
+    <!-- Carousel -->
+    <div
+      id="heroCarousel"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+      data-bs-interval="5000"
+      data-bs-pause="false"
+    >
+      <div class="carousel-inner">
         <div
-          class="item"
-          style="background-image: url('images/global-cloud.jpg')"
-          data-stellar-background-ratio="0.5"
+          class="carousel-item active"
+          style="background-image: url('images/caro-1.jpg')"
         >
-          <div class="overlay"></div>
-          <div class="container">
-            <div
-              class="row no-gutters slider-text js-fullheight align-items-center"
-              data-scrollax-parent="true"
+          <div class="carousel-caption">
+            <h1>Organize Your Digital Infrastructure</h1>
+            <p>
+              SPUDWEB stands as a testament to what exceptional service and technology-driven solutions should be—reliable, forward-thinking, and customer-focused.
+            
+
+              Transform your business with comprehensive digital solutions and
+              expert IT consulting.
+            </p>
+            <a href="services.html" class="btn btn-gradient-box mt-3"
+              >Explore Services</a
             >
-              <div
-                class="col-md-8 ftco-animate mt-5 pt-md-5"
-                data-scrollax=" properties: { translateY: '70%' }"
-              >
-                <div class="row">
-                  <div class="col-md-7">
-                    <!-- <p class="mb-4 pl-md-5 line" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">A small river named Duden flows by their place and supplies</p> -->
-                  </div>
-                </div>
-                <h1
-                  class="mb-4"
-                  data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
-                >
-                  Spudweb helps you organize your IT Infrastructure.
-                </h1>
-                <!-- <p><a href="services.html" class="btn btn-primary px-4 py-3">Explore Our Solutions</a></p> -->
-              </div>
-            </div>
           </div>
         </div>
+
         <div
-          class="item"
-          style="background-image: url('images/security.jpg')"
-          data-stellar-background-ratio="0.5"
+          class="carousel-item"
+          style="background-image: url('images/caro-8.jpg')"
         >
-          <div class="overlay"></div>
-          <div class="container">
-            <div
-              class="row no-gutters slider-text js-fullheight align-items-center"
-              data-scrollax-parent="true"
+          <div class="carousel-caption">
+            <h1>Empower with Secure Connectivity</h1>
+            <p>
+              Secure your business with advanced cybersecurity and data
+              protection solutions.
+            </p>
+            <p>Modernize your IT ecosystem with scalable infrastructure solutions that enhance efficiency, reliability, and long-term growth.</p>
+            <a href="about.html" class="btn btn-gradient-box mt-3"
+              >Learn More</a
             >
-              <div
-                class="col-md-8 ftco-animate mt-5 pt-md-5"
-                data-scrollax=" properties: { translateY: '70%' }"
-              >
-                <div class="row">
-                  <div class="col-md-7">
-                    <!-- <p class="mb-4 pl-md-5 line" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">A small river named Duden flows by their place and supplies</p> -->
-                  </div>
-                </div>
-                <h1
-                  class="mb-4"
-                  data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
-                >
-                  Secure your website — get stronger internet security.
-                </h1>
-                <!-- <p><a href="services.html" class="btn btn-primary px-4 py-3">Explore Our Solutions</a></p> -->
-              </div>
-            </div>
           </div>
         </div>
+
         <div
-          class="item"
-          style="background-image: url('images/bg_2.jpg')"
-          data-stellar-background-ratio="0.5"
+          class="carousel-item"
+          style="background-image: url('images/caro-3.jpg')"
         >
-          <div class="overlay"></div>
-          <div class="container">
-            <div
-              class="row no-gutters slider-text js-fullheight align-items-center"
-              data-scrollax-parent="true"
+          <div class="carousel-caption">
+            <h1>Transform Through the Cloud</h1>
+            <p>
+              Deliver seamless digital experiences with unified cloud solutions.
+            </p>
+            <p>Accelerate innovation with unified cloud platforms designed to optimize performance and simplify digital operations.</p>
+            <a href="services.html" class="btn btn-gradient-box mt-3"
+              >Get Started</a
             >
-              <div
-                class="col-md-8 ftco-animate mt-5 pt-md-5"
-                data-scrollax=" properties: { translateY: '70%' }"
-              >
-                <div class="row">
-                  <div class="col-md-7">
-                    <!-- <p class="mb-4 pl-md-5 line" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">A small river named Duden flows by their place and supplies</p> -->
-                  </div>
-                </div>
-                <h1
-                  class="mb-4"
-                  data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
-                >
-                  Build and deliver truly integrated Digital Infrastructure.
-                </h1>
-                <!-- <p><a href="services.html" class="btn btn-primary px-4 py-3">Explore Our Solutions</a></p> -->
-              </div>
-            </div>
           </div>
         </div>
+
         <div
-          class="item"
-          style="background-image: url('images/bg_3.jpg')"
-          data-stellar-background-ratio="0.5"
+          class="carousel-item"
+          style="background-image: url('images/caro-4.jpg')"
         >
-          <div class="overlay"></div>
-          <div class="container">
-            <div
-              class="row no-gutters slider-text js-fullheight align-items-center"
-              data-scrollax-parent="true"
+          <div class="carousel-caption">
+            
+            <h1>Delivering Trust Through Technology</h1>
+            <p>We promise to deliver future-ready technology solutions.</p>
+             <p>Our dynamic approach and unwavering commitment to quality have earned us the confidence of a wide range of satisfied clients.</p>
+            
+            <a href="contact.html" class="btn btn-gradient-box mt-3"
+              >Contact Us</a
             >
-              <div
-                class="col-md-8 ftco-animate mt-5 pt-md-5"
-                data-scrollax=" properties: { translateY: '70%' }"
-              >
-                <div class="row">
-                  <div class="col-md-7">
-                    <!-- <p class="mb-4 pl-md-5 line" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">A small river named Duden flows by their place and supplies</p> -->
-                  </div>
-                </div>
-                <h1
-                  class="mb-4"
-                  data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
-                >
-                  We promise to deliver.
-                </h1>
-                <!-- <p><a href="services.html" class="btn btn-primary px-4 py-3">Explore Our Solutions</a></p> -->
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Logo Scrolling Section -->
+    <!-- Logo Scroll Section -->
     <section class="logo-scroll-section py-5">
       <div class="container-fluid">
         <div class="row justify-content-center mb-4">
           <div class="col-md-8 text-center">
-            <h3 class="mb-3">Trusted by Leading Companies</h3>
+            <h3 class="mb-3 text-dark">Trusted by Leading Companies</h3>
             <p class="text-muted">
-              We partner with industry leaders to deliver exceptional IT
-              solutions
+              We partner with global leaders to deliver excellence
             </p>
           </div>
         </div>
+
         <div class="logo-scroll-container">
           <div class="logo-scroll-track">
             <img src="images/logo/avaya.jfif" alt="Avaya" class="logo-item" />
@@ -278,7 +155,7 @@
               alt="Microsoft"
               class="logo-item"
             />
-            <!-- Duplicate for seamless loop -->
+            <!-- duplicate for infinite loop -->
             <img src="images/logo/avaya.jfif" alt="Avaya" class="logo-item" />
             <img src="images/logo/cisco.png" alt="Cisco" class="logo-item" />
             <img src="images/logo/dell.png" alt="Dell" class="logo-item" />
@@ -292,52 +169,84 @@
             />
           </div>
         </div>
+
+        <a class="see-more" data-bs-toggle="modal" data-bs-target="#logoModal"
+          >See More</a
+        >
       </div>
     </section>
 
-    <!-- Get in Touch Section -->
-    <section class="get-in-touch-section py-5 bg-light">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 text-center">
-            <h3 class="mb-4">Get in Touch</h3>
-            <div class="row">
-              <div class="col-md-6">
-                <p>
-                  <strong>Phone:</strong>
-                  <a href="tel:+919840065650">+91 98400-65650</a>
-                </p>
+    <!-- Modal -->
+    <div class="modal fade" id="logoModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content p-4">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Our Partners</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-3">
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/avaya.jfif" />
+                </div>
               </div>
-              <div class="col-md-6">
-                <p>
-                  <strong>Email:</strong>
-                  <a href="mailto:info@spudweb.in">info@spudweb.in</a>
-                </p>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/cisco.png" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/dell.png" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/hp.png" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/IBM.png" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/intel.png" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/microsoft.png" />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-
-
+    </div>
+    <!-- intro section -->
     <section class="ftco-section">
       <div class="container">
         <div class="row justify-content-center pb-5">
-          <div class="col-lg-6 heading-section text-center ftco-animate">
-            <h2 class="mb-4">
-              More than <span>35+</span> years we provide
-              <span>Digital Infrastructure</span>
+          <div class="col-lg-12 heading-section text-center ftco-animate modern-intro">
+            <h2 class="mb-4 modern-heading">
+              More than <span class="highlight-number">35+</span> years we provide
+              <span class="highlight-text">Digital Infrastructure</span>
             </h2>
-            <p>
-              Your Trusted Partner for Scalable IT Infrastructure & Unwavering
-              Support.
-            </p>
-            <p>
-              <a href="services.html" class="btn btn-primary px-4 py-3"
-                >Explore Our Solutions</a
-              >
+            <p class="modern-paragraph">
+              SPUDWEB specializes in providing turnkey solutions in IT Infrastructure.
+              Our partnership with widely renowned companies like Wipro, Microsoft, Sify,
+              and Safescrypt has not only equipped us with cutting-edge technological
+              solutions but also led the company to immense growth. Established in 1996,
+              SPUDWEB has gained the trust and partnership of many satisfied clients,
+              thanks to our dynamic approach. SPUDWEB is the perfect example of what
+              quality service and technology-based solutions should be.
             </p>
           </div>
         </div>
@@ -348,11 +257,14 @@
                 <span class="flaticon-web-programming"></span>
               </div>
               <div class="text">
-                <h3>Digital Infrastructure</h3>
+                <h3 style="color: #091b8f; font-weight: 600">
+                  Digital Infrastructure
+                </h3>
                 <p>
-                  cloud computing, cybersecurity, managed Digital
-                  Infrastructure, data services (backup, recovery, analytics),
-                  software development, and network infrastructure.
+                  It is the foundation for modern technology, enabling
+                  everything from internet access and cloud computing to data
+                  management, communication, and advanced services like AI and
+                  real-time analytics
                 </p>
               </div>
             </div>
@@ -366,7 +278,7 @@
                 <span class="flaticon-presentation"></span>
               </div>
               <div class="text">
-                <h3>IT Consulting</h3>
+                <h3 style="color: #091b8f; font-weight: 600">IT Consulting</h3>
                 <p>
                   Our IT consulting services empower businesses to align
                   technology with strategic goals. From infrastructure planning
@@ -378,231 +290,546 @@
           </div>
         </div>
       </div>
+      <br /><br />
     </section>
 
-    
-
-    <section class="ftco-section services-section">
+    <!-- Solutions Section -->
+    <section class="solutions-section">
+      <h3 class="text-center mb-4" style="color: #091b8f; font-weight: 600">
+        Our 5C Framework
+      </h3>
+      <br />
       <div class="container">
-        <!-- Section Heading -->
-        <div class="row justify-content-center pb-5">
-          <div class="col-md-6 heading-section text-center ftco-animate">
-            <h2 class="mb-4 text-dark">
-              Our <span>5C Framework</span> Services
-            </h2>
+        <!-- Top Row: 3 cards -->
+        <div class="row solution-boxes-row mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="solution-card" data-target="components">
+              <div class="card-header">
+                <h4>Components</h4>
+                <span class="toggle-icon">↓</span>
+              </div>
+              <div class="solution-content" id="components-content">
+                <p>
+                  Hardware and software solutions including servers, networking
+                  equipment, and enterprise applications for robust
+                  infrastructure.
+                </p>
+                <a href="services.html" class="btn btn-outline-primary btn-sm"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="solution-card" data-target="connectivity">
+              <div class="card-header">
+                <h4>Connectivity</h4>
+                <span class="toggle-icon">↓</span>
+              </div>
+              <div class="solution-content" id="connectivity-content">
+                <p>
+                  High-speed internet, SD-WAN, VPN services, and global network
+                  connectivity solutions for seamless communication.
+                </p>
+                <a
+                  href="services.html"
+                  class="btn btn-outline-primary btn-sm"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="solution-card" data-target="cloud">
+              <div class="card-header">
+                <h4>Cloud</h4>
+                <span class="toggle-icon">↓</span>
+              </div>
+              <div class="solution-content" id="cloud-content">
+                <p>
+                  Cloud migration, multi-cloud management, AWS, Azure, and GCP
+                  services with cost optimization and security.
+                </p>
+                <a href="services.html" class="btn btn-outline-primary btn-sm"
+                  >Learn More</a
+                >
+              </div>
+            </div>
           </div>
         </div>
-
-        <!-- Services Rows -->
-        <div class="row justify-content-center">
-          <!-- First Row: 3 boxes -->
-          <div class="col-md-4 d-flex align-items-stretch mb-4">
-            <div class="card service-card text-center p-4 square-box">
-              <div class="mb-3"><i class="fa fa-server fa-2x"></i></div>
-              <h3 class="heading mb-3">COMPONENTS</h3>
-              <p>
-                This is the bedrock. The elite, next-generation hardware and
-                software that forms the unshakable foundation of your empire. We
-                don’t just install servers; we engineer fortresses.
-              </p>
+        <!-- Bottom Row: 2 cards -->
+        <div class="row solution-boxes-row justify-content-center">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="solution-card" data-target="cybersecurity">
+              <div class="card-header">
+                <h4>Cyber Security </h4>
+                <span class="toggle-icon">↓</span>
+              </div>
+              <div class="solution-content" id="cybersecurity-content">
+                <p>
+                  Advanced threat protection, vulnerability assessments,
+                  compliance auditing, and data encryption services.
+                </p>
+                <a href="services.html" class="btn btn-outline-primary btn-sm"
+                  >Learn More</a
+                >
+              </div>
             </div>
           </div>
-
-          <div class="col-md-4 d-flex align-items-stretch mb-4">
-            <div class="card service-card text-center p-4 square-box">
-              <div class="mb-3"><i class="fa fa-cloud fa-2x"></i></div>
-              <h3 class="heading mb-3">CLOUD</h3>
-              <p>
-                This is the sky. We don’t just help you get to the cloud; we
-                architect your entire sky. Seamless migration, flawless
-                optimization. We build it so you can soar without limits.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4 d-flex align-items-stretch mb-4">
-            <div class="card service-card text-center p-4 square-box">
-              <div class="mb-3"><i class="fa fa-shield fa-2x"></i></div>
-              <h3 class="heading mb-3">CYBER SECURITY</h3>
-              <p>
-                This is the shield. In a world of digital threats, we don’t just
-                offer defense. We offer a fortress. We provide proactive,
-                intelligent threat neutralization. We make your data…
-                untouchable.
-              </p>
-            </div>
-          </div>
-
-          <!-- Second Row: 2 boxes, centered -->
-          <div class="col-md-4 d-flex align-items-stretch mb-4">
-            <div class="card service-card text-center p-4 square-box">
-              <div class="mb-3"><i class="fa fa-globe fa-2x"></i></div>
-              <h3 class="heading mb-3">CONNECTIVITY</h3>
-              <p>
-                This is the bloodstream. The blazing-fast, global networks that
-                connect your world. We engineer lightning. We ensure that data
-                doesn’t just move… it flies
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4 d-flex align-items-stretch mb-4">
-            <div class="card service-card text-center p-4 square-box">
-              <div class="mb-3"><i class="fa fa-headphones fa-2x"></i></div>
-              <h3 class="heading mb-3">CONSULTING</h3>
-              <p>
-                the brain that orchestrates it all… Consulting. This is the
-                strategy. We are more than technicians; we are visioneers. We
-                architect the long-term plan that transforms your IT from a cost
-                center into your single greatest competitive advantage.
-              </p>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="solution-card" data-target="consulting">
+              <div class="card-header">
+                <h4>IT Consulting</h4>
+                <span class="toggle-icon">↓</span>
+              </div>
+              <div class="solution-content" id="consulting-content">
+                <p>
+                  Expert IT consulting services including infrastructure
+                  planning, digital transformation, and 24/7 technical support.
+                </p>
+                <a href="services.html" class="btn btn-outline-primary btn-sm"
+                  >Learn More</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="ftco-footer ftco-footer-2 ftco-section">
+    <!-- ================== About / Info Section ================== -->
+    <section class="about-info-section py-5" id="about">
       <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-footer-logo">SPUDWEB</h2>
-              <p>
-                SPUDWEB is the perfect example of what quality service and
-                technology based solutions should be.
-              </p>
-              <ul class="ftco-footer-social list-unstyled mt-2">
-                <li class="ftco-animate">
-                  <a href="https://x.com/"
-                    ><span class="fa fa-twitter"></span
-                  ></a>
-                </li>
-                <li class="ftco-animate">
-                  <a href="https://www.facebook.com/"
-                    ><span class="fa fa-facebook"></span
-                  ></a>
-                </li>
-                <li class="ftco-animate">
-                  <a href="https://in.linkedin.com/"
-                    ><span class="fa fa-linkedin"></span
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-5">
-              <h2 class="ftco-heading-2">Explore</h2>
-              <ul class="list-unstyled">
-                <li><a href="about.html" class="py-2 d-block">About</a></li>
-                <li><a href="contact.html" class="py-2 d-block">Contact</a></li>
-                <li><a href="#" class="py-2 d-block">What We Do</a></li>
-                <li>
-                  <a href="#" class="py-2 d-block">Plans &amp; Pricing</a>
-                </li>
-                <li><a href="#" class="py-2 d-block">Refund Policy</a></li>
-                <li><a href="#" class="py-2 d-block">Call Us</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Legal</h2>
-              <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Join Us</a></li>
+        <div class="row align-items-center">
+          <!-- Left Content -->
+          <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+            <h2 class="fw-bold mb-3 text-inkblue">
+              Building Digital Infrastructure for the Future
+            </h2>
+            <p class="text-muted mb-4">
+              For over three decades, Spudweb has been empowering organizations
+              through innovative IT solutions, scalable cloud infrastructure,
+              and secure connectivity. Our goal is to help businesses stay
+              agile, connected, and future-ready.
+            </p>
 
-                <li>
-                  <a href="#" class="py-2 d-block">Privacy &amp; Policy</a>
-                </li>
-                <li>
-                  <a href="#" class="py-2 d-block">Terms &amp; Conditions</a>
-                </li>
-                <li><a href="#" class="py-2 d-block">Careers</a></li>
-              </ul>
+            <div class="accordion" id="aboutAccordion">
+              <!-- Accordion Item 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    01. What makes Spudweb a trusted IT partner?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#aboutAccordion"
+                >
+                  <div class="accordion-body">
+                    Our 35+ years of experience combined with technical
+                    expertise and industry partnerships ensure reliable, secure,
+                    and future-driven infrastructure for all business sizes.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    02. How do we support digital transformation?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#aboutAccordion"
+                >
+                  <div class="accordion-body">
+                    By integrating cloud, cybersecurity, and data-driven
+                    solutions that modernize legacy systems and accelerate
+                    innovation across your organization.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    03. What industries do we serve?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#aboutAccordion"
+                >
+                  <div class="accordion-body">
+                    We partner with enterprises across finance, healthcare,
+                    manufacturing, and telecommunications to build resilient and
+                    secure technology ecosystems.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Have a Questions?</h2>
-              <ul class="list-unstyled">
-                <li>
-                  <span class="icon fa fa-map marker"></span>
-                  <a href="contact.html" class="text">
-                    1 Rajambal Street T Nagar Near Hindi Prachar Sabha Chennai
-                    600017
-                  </a>
-                </li>
 
-                <li>
-                  <a href="#"
-                    ><span class="icon fa fa-phone"></span
-                    >&nbsp;&nbsp;&nbsp;<span class="text">+91 98400-65650</span></a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><span class="icon fa fa-paper-plane pr-4"></span
-                    ><span class="text">info@spudweb.in</span></a
-                  >
-                </li>
-              </ul>
-            </div>
+          <!-- Right Image -->
+          <div class="col-lg-6 text-center" data-aos="fade-left">
+            <img
+              src="images/caro-5.jpg"
+              alt="Digital Infrastructure"
+              class="img-fluid rounded shadow-lg"
+            />
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p>
-              Copyright &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              All rights reserved by
-              <a href="" target="_blank">Spudweb</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- ================= Footer ================= -->
+
+    <footer
+      class="footer-section text-white py-5"
+      style="background-color: #0b1e36"
+    >
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Company Info -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h5 class="fw-bold mb-3 text-uppercase">SPUDWEB</h5>
+            <p class="small">
+              Empowering businesses through innovative IT solutions, digital
+              transformation, and secure infrastructure services.
             </p>
+            <!-- Social Media Icons -->
+            <!-- Footer Social Media Section -->
+            <div class="social-media mt-3">
+              <p class="mb-0 d-flex justify-content-center flex-wrap">
+                <a
+                  href="https://www.facebook.com/"
+                  class="d-flex align-items-center justify-content-center me-2"
+                  aria-label="Facebook"
+                >
+                  <span class="ftco-animate">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </span>
+                </a>
+
+                <a
+                  href="https://x.com/"
+                  class="d-flex align-items-center justify-content-center me-2"
+                  aria-label="Twitter"
+                >
+                  <span class="ftco-animate">
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </span>
+                </a>
+
+                <a
+                  href="https://www.instagram.com/"
+                  class="d-flex align-items-center justify-content-center me-2"
+                  aria-label="Instagram"
+                >
+                  <span class="ftco-animate">
+                    <i class="fa-brands fa-instagram"></i>
+                  </span>
+                </a>
+
+                <a
+                  href="https://in.linkedin.com/"
+                  class="d-flex align-items-center justify-content-center"
+                  aria-label="LinkedIn"
+                >
+                  <span class="ftco-animate">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </span>
+                </a>
+              </p>
+            </div>
           </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h5 class="fw-bold mb-3 text-uppercase ">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="about.html" class="footer-link">About Us</a></li>
+              <li><a href="services.html" class="footer-link">Services</a></li>
+              <li><a href="contact.html" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- IT Solutions -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h5 class="fw-bold mb-3 text-uppercase">IT Solutions</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="footer-link">Components</a>
+              </li>
+              <li><a href="#" class="footer-link">Cloud</a></li>
+              <li>
+                <a href="#" class="footer-link">Consulting</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link"
+                  >Cyber Security</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link">Connectivity</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h5 class="fw-bold mb-3 text-uppercase" >Have a Question?</h5>
+            <ul class="list-unstyled small">
+              <li class="mb-2">
+                <i class="fa fa-map-marker-alt me-2 text-info"></i> 1 Rajambal Street T Nagar Near Hindi Prachar Sabha
+                      Chennai 600017
+              </li>
+              <li class="mb-2">
+                <i class="fa fa-phone me-2 text-info"></i>
+                <a href="tel:+919876543210" class="footer-link"
+                  >+91 98765 43210</a
+                >
+              </li>
+              <li class="mb-2">
+                <i class="fa fa-envelope me-2 text-info"></i>
+                <a href="mailto:info@spudweb.com" class="footer-link"
+                  >info@spudweb.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="border-light mt-4" />
+
+        <!-- Copyright -->
+        <div class="text-center pt-2">
+          <p class="mb-0 small">
+            © <span id="year"></span> <strong>SPUDWEB</strong>. All Rights
+            Reserved. | spudweb.in
+          </p>
         </div>
       </div>
     </footer>
 
-    <!-- loader -->
-    <div id="ftco-loader" class="show fullscreen">
-      <svg class="circular" width="48px" height="48px">
-        <circle
-          class="path-bg"
-          cx="24"
-          cy="24"
-          r="22"
-          fill="none"
-          stroke-width="4"
-          stroke="#eeeeee"
-        />
-        <circle
-          class="path"
-          cx="24"
-          cy="24"
-          r="22"
-          fill="none"
-          stroke-width="4"
-          stroke-miterlimit="10"
-          stroke="#F96D00"
-        />
-      </svg>
+    <!-- FLOATING CONTACT WIDGET -->
+    <div class="floating-icons" id="floatingContacts" aria-hidden="false">
+      <!-- Phone -->
+      <div class="float-item" data-type="phone" data-open="false">
+        <div class="contact-pill" aria-hidden="true">
+          <a
+            class="contact-link"
+            href="tel:+912323345678"
+            style="color: inherit; text-decoration: none"
+          >
+            +91 2323345678
+          </a>
+        </div>
+        <button class="float-btn" aria-label="Call us" type="button">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <!-- Email -->
+      <div class="float-item" data-type="email" data-open="false">
+        <div class="contact-pill" aria-hidden="true">
+          <a
+            class="contact-link"
+            href="mailto:info@spudweb.in"
+            style="color: inherit; text-decoration: none"
+          >
+            info@spudweb.in
+          </a>
+        </div>
+        <button class="float-btn" aria-label="Email us" type="button">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/scrollax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="js/google-map.js"></script>
-    <script src="js/main.js"></script>
+    <script>
+      /* FLOATING CONTACT WIDGET BEHAVIOUR */
+      (function () {
+        const container = document.getElementById("floatingContacts");
+        if (!container) return;
+        const items = Array.from(container.querySelectorAll(".float-item"));
+
+        // toggle an item open/closed
+        function toggleItem(item, open) {
+          if (open) {
+            item.classList.add("open");
+            item.setAttribute("data-open", "true");
+            const pill = item.querySelector(".contact-pill");
+            if (pill) pill.setAttribute("aria-hidden", "false");
+          } else {
+            item.classList.remove("open");
+            item.setAttribute("data-open", "false");
+            const pill = item.querySelector(".contact-pill");
+            if (pill) pill.setAttribute("aria-hidden", "true");
+          }
+        }
+
+        // collapse all except optionally the provided element
+        function collapseAll(except = null) {
+          items.forEach((it) => {
+            if (it !== except) toggleItem(it, false);
+          });
+        }
+
+        // attach events
+        items.forEach((item) => {
+          const btn = item.querySelector(".float-btn");
+          const pill = item.querySelector(".contact-pill");
+          const link = item.querySelector(".contact-link");
+
+          // Clicking the round icon toggles the pill
+          btn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const isOpen = item.getAttribute("data-open") === "true";
+            if (isOpen) {
+              toggleItem(item, false);
+            } else {
+              collapseAll(item);
+              toggleItem(item, true);
+            }
+          });
+
+          // clicking the pill's link should follow link (tel/mail) — no JS needed, but close after short delay
+          if (link) {
+            link.addEventListener("click", (ev) => {
+              // allow default navigation (tel/mail). Close widget after tiny delay for UX
+              setTimeout(() => collapseAll(), 400);
+            });
+          }
+
+          // Allow clicking the pill (not just the link) to trigger action: optional behaviour:
+          pill.addEventListener("click", (ev) => {
+            // if clicked anywhere on pill, forward to link
+            if (link) {
+              // For mail/phone links, simulate navigation
+              window.location.href = link.getAttribute("href");
+            }
+          });
+        });
+
+        // click outside closes all
+        document.addEventListener("click", (ev) => {
+          if (!ev.target.closest("#floatingContacts")) {
+            collapseAll();
+          }
+        });
+
+        // close on ESC
+        document.addEventListener("keydown", (ev) => {
+          if (ev.key === "Escape") collapseAll();
+        });
+
+        // optional: show a subtle entrance animation after load
+        window.addEventListener("load", () => {
+          // small delayed fade/slide-in
+          container.style.transition =
+            "transform 420ms ease, opacity 420ms ease";
+          container.style.transform = "translateY(6px)";
+          container.style.opacity = "1";
+        });
+      })();
+    </script>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Solutions Section Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const solutionCards = document.querySelectorAll(".solution-card");
+
+        // Individual solution card toggle
+        solutionCards.forEach((card) => {
+          const header = card.querySelector(".card-header");
+          const targetId = card.getAttribute("data-target");
+          const content = document.getElementById(targetId + "-content");
+          const toggleIcon = card.querySelector(".toggle-icon");
+
+          if (header && content) {
+            header.addEventListener("click", function (e) {
+              e.preventDefault();
+
+              // Toggle active class for icon rotation
+              card.classList.toggle("active");
+
+              // Update icon
+              if (card.classList.contains("active")) {
+                toggleIcon.textContent = "↑";
+              } else {
+                toggleIcon.textContent = "↓";
+              }
+
+              // Toggle content visibility
+              if (content.classList.contains("show")) {
+                content.classList.remove("show");
+              } else {
+                content.classList.add("show");
+              }
+            });
+          }
+        });
+
+        // Modern Intro Animation
+        const modernIntro = document.querySelector('.modern-intro');
+        if (modernIntro) {
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                setTimeout(() => {
+                  entry.target.classList.add('animate-in');
+                }, 200);
+                observer.unobserve(entry.target);
+              }
+            });
+          }, {
+            threshold: 0.3,
+            rootMargin: '0px 0px -50px 0px'
+          });
+
+          observer.observe(modernIntro);
+        }
+      });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
