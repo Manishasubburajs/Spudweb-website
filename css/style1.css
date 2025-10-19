@@ -982,6 +982,78 @@ footer .fa {
   transform: translateY(30px);
 }
 
+/* ============================
+   ABOUT INFO SECTION STYLES
+============================ */
+.about-info-section {
+  background-color: #ffffff; /* White background */
+  color: #212529; /* Dark text for contrast */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Gradient Title */
+.about-info-section .gradient-title {
+  background: linear-gradient(90deg, #004aad, #00b4d8); /* Ink blue → cyan */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Paragraphs inside section */
+.about-info-section p {
+  color: #6c757d; /* Muted grey text */
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Accordion Styling */
+.about-info-section .accordion-button {
+  background-color: #f8f9fa;
+  color: #0a0f2c;
+  font-weight: 500;
+  border: none;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+.about-info-section .accordion-button:hover {
+  background-color: #e9f5ff;
+  color: #004aad;
+}
+
+.about-info-section .accordion-button:focus {
+  box-shadow: none;
+}
+
+.about-info-section .accordion-item {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.about-info-section .accordion-body {
+  background-color: #ffffff;
+  color: #495057;
+  line-height: 1.6;
+}
+
+/* Right-side image styling */
+.about-info-section img {
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-info-section img:hover {
+  transform: scale(1.02);
+}
+
+
 /* ================== ABOUT CONTENT SECTION ================== */
 .about-content-section {
   padding: 80px 0;
