@@ -27,38 +27,59 @@
       .main-content {
         background-color: #ffffff;
       }
+
+      /* Responsive logo sizing */
+      .navbar-brand img {
+        max-height: 60px;
+        max-width: 60px;
+      }
+
+      @media (max-width: 768px) {
+        .navbar-brand img {
+          max-height: 60px;
+           max-width: 60px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .navbar-brand img {
+          max-height: 50px;
+          max-width: 50px;
+        }
+      }
     </style>
   </head>
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">SPUDWEB</a>
-        <button
-          class="navbar-toggler text-white"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
+    <nav class="navbar navbar-expand-lg fixed-top d-flex justify-content-between align-items-center px-3">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo/Spudweb Logo.png" alt="Spudweb Logo" class="img-fluid me-2">
+        <span class="d-none d-md-inline">SPUDWEB</span>
+      </a>
+      <button
+        class="navbar-toggler text-white"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="under-construction-1.html">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="under-construction.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
     </nav>
 
@@ -173,7 +194,7 @@
         </button>
         <button class="service-menu-item" data-service="cybersecurity">
           <i class="fas fa-shield-alt"></i>
-          <span>Cyber Security</span>
+          <span>CyberSecurity</span>
         </button>
         <button class="service-menu-item" data-service="consulting">
           <i class="fas fa-headphones"></i>
@@ -274,12 +295,12 @@
         <div class="row align-items-center">
           <div class="col-lg-6 mb-4 mb-lg-0">
             <div class="service-image-wrapper">
-              <img src="images/bg_3.jpg" alt="Cyber Security Solutions" class="service-image">
+              <img src="images/bg_3.jpg" alt="CyberSecurity Solutions" class="service-image">
             </div>
           </div>
           <div class="col-lg-6">
             <div class="service-text-content">
-              <h3 class="service-title">Cyber Security </h3>
+              <h3 class="service-title">CyberSecurity </h3>
               <p class="service-description">
                 Protect your digital assets with our comprehensive cybersecurity solutions. From vulnerability
                 assessments to compliance auditing, we safeguard your business against evolving cyber threats
@@ -393,8 +414,8 @@
             <h5 class="fw-bold mb-3 text-uppercase">Quick Links</h5>
             <ul class="list-unstyled">
               <li><a href="index.html" class="footer-link">Home</a></li>
-              <li><a href="about.html" class="footer-link">About Us</a></li>
-              <li><a href="services.html" class="footer-link">Services</a></li>
+              <li><a href="under-construction-1.html" class="footer-link">About Us</a></li>
+              <li><a href="under-construction.html" class="footer-link">Services</a></li>
               <li><a href="contact.html" class="footer-link">Contact</a></li>
             </ul>
           </div>
@@ -412,7 +433,7 @@
               </li>
               <li>
                 <a href="" class="footer-link"
-                  >Cyber Security</a
+                  >CyberSecurity</a
                 >
               </li>
               <li>
@@ -431,8 +452,8 @@
               </li>
               <li class="mb-2">
                 <i class="fa fa-phone me-2 text-info"></i>
-                <a href="tel:+919876543210" class="footer-link"
-                  >+91 98765 43210</a
+                <a href="tel:+91 98400-65650" class="footer-link"
+                  >+91 98400-65650</a
                 >
               </li>
               <li class="mb-2">
@@ -462,7 +483,7 @@
       <!-- Phone -->
       <div class="float-item" data-type="phone" data-open="false">
         <div class="contact-pill" aria-hidden="true">
-          <a class="contact-link" href="tel:+912323345678">+91 2323345678</a>
+          <a class="contact-link" href="tel:+91 98400-65650">+91 98400-65650</a>
         </div>
         <button class="float-btn" aria-label="Call us" type="button">
           <i class="fa fa-phone" aria-hidden="true"></i>

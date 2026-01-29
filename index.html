@@ -22,38 +22,85 @@
     />
 
     <link rel="stylesheet" href="css/style1.css" />
+    <style>
+      /* White background for main content */
+      .main-content {
+        background-color: #ffffff;
+      }
+
+      /* Responsive logo sizing */
+      .navbar-brand img {
+        max-height: 60px;
+        max-width: 60px;
+      }
+
+      @media (max-width: 768px) {
+        .navbar-brand img {
+          max-height: 60px;
+           max-width: 60px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .navbar-brand img {
+           max-height: 50px;
+           max-width: 50px;
+        }
+      }
+
+      /* Footer logo responsiveness */
+      .footer-logo {
+        max-height: 40px;
+        max-width: 40px;
+      }
+
+      @media (max-width: 768px) {
+        .footer-logo {
+          max-height: 35px;
+          max-width: 35px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .footer-logo {
+          max-height: 30px;
+          max-width: 30px;
+        }
+      }
+    </style>
 
   </head>
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">SPUDWEB</a>
-        <button
-          class="navbar-toggler text-white"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="under-construction-1.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="under-construction.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
+    <nav class="navbar navbar-expand-lg fixed-top d-flex justify-content-between align-items-center px-3">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo/Spudweb Logo.png" alt="Spudweb Logo" class="img-fluid me-2">
+        <span class="d-none d-md-inline">SPUDWEB</span>
+      </a>
+      <button
+        class="navbar-toggler text-white"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="under-construction-1.html">About</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="under-construction.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
     </nav>
 
@@ -80,7 +127,7 @@
               Transform your business with comprehensive digital solutions and
               expert IT consulting.
             </p>
-            <a href="services.html" class="btn btn-gradient-box mt-3"
+            <a href="under-construction.html" class="btn btn-gradient-box mt-3"
               >Explore Services</a
             >
           </div>
@@ -97,7 +144,7 @@
               protection solutions.
             </p>
             <p>Modernize your IT ecosystem with scalable infrastructure solutions that enhance efficiency, reliability, and long-term growth.</p>
-            <a href="about.html" class="btn btn-gradient-box mt-3"
+            <a href="under-construction-1.html" class="btn btn-gradient-box mt-3"
               >Learn More</a
             >
           </div>
@@ -113,7 +160,7 @@
               Deliver seamless digital experiences with unified cloud solutions.
             </p>
             <p>Accelerate innovation with unified cloud platforms designed to optimize performance and simplify digital operations.</p>
-            <a href="services.html" class="btn btn-gradient-box mt-3"
+            <a href="under-construction.html" class="btn btn-gradient-box mt-3"
               >Get Started</a
             >
           </div>
@@ -321,7 +368,7 @@
                   equipment, and enterprise applications for robust
                   infrastructure.
                 </p>
-                <a href="services.html" class="btn btn-outline-primary btn-sm"
+                <a href="under-construction.html" class="btn btn-outline-primary btn-sm"
                   >Learn More</a
                 >
               </div>
@@ -339,7 +386,7 @@
                   connectivity solutions for seamless communication.
                 </p>
                 <a
-                  href="services.html"
+                  href="under-construction.html"
                   class="btn btn-outline-primary btn-sm"
                   >Learn More</a
                 >
@@ -357,7 +404,7 @@
                   Cloud migration, multi-cloud management, AWS, Azure, and GCP
                   services with cost optimization and security.
                 </p>
-                <a href="services.html" class="btn btn-outline-primary btn-sm"
+                <a href="under-construction.html" class="btn btn-outline-primary btn-sm"
                   >Learn More</a
                 >
               </div>
@@ -369,7 +416,7 @@
           <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="solution-card" data-target="cybersecurity">
               <div class="card-header">
-                <h4>Cyber Security </h4>
+                <h4>CyberSecurity </h4>
                 <span class="toggle-icon">↓</span>
               </div>
               <div class="solution-content" id="cybersecurity-content">
@@ -377,7 +424,7 @@
                   Advanced threat protection, vulnerability assessments,
                   compliance auditing, and data encryption services.
                 </p>
-                <a href="services.html" class="btn btn-outline-primary btn-sm"
+                <a href="under-construction.html" class="btn btn-outline-primary btn-sm"
                   >Learn More</a
                 >
               </div>
@@ -394,7 +441,7 @@
                   Expert IT consulting services including infrastructure
                   planning, digital transformation, and 24/7 technical support.
                 </p>
-                <a href="services.html" class="btn btn-outline-primary btn-sm"
+                <a href="under-construction.html" class="btn btn-outline-primary btn-sm"
                   >Learn More</a
                 >
               </div>
@@ -591,8 +638,8 @@
             <h5 class="fw-bold mb-3 text-uppercase ">Quick Links</h5>
             <ul class="list-unstyled">
               <li><a href="index.html" class="footer-link">Home</a></li>
-              <li><a href="about.html" class="footer-link">About Us</a></li>
-              <li><a href="services.html" class="footer-link">Services</a></li>
+              <li><a href="under-construction-1.html" class="footer-link">About Us</a></li>
+              <li><a href="under-construction.html" class="footer-link">Services</a></li>
               <li><a href="contact.html" class="footer-link">Contact</a></li>
             </ul>
           </div>
@@ -610,7 +657,7 @@
               </li>
               <li>
                 <a href="" class="footer-link"
-                  >Cyber Security</a
+                  >CyberSecurity</a
                 >
               </li>
               <li>
@@ -629,8 +676,8 @@
               </li>
               <li class="mb-2">
                 <i class="fa fa-phone me-2 text-info"></i>
-                <a href="tel:+919876543210" class="footer-link"
-                  >+91 98765 43210</a
+                <a href="tel:+91 98400-65650" class="footer-link"
+                  >+91 98400-65650</a
                 >
               </li>
               <li class="mb-2">
@@ -662,10 +709,10 @@
         <div class="contact-pill" aria-hidden="true">
           <a
             class="contact-link"
-            href="tel:+912323345678"
+            href="tel:+91 98400-65650"
             style="color: inherit; text-decoration: none"
           >
-            +91 2323345678
+            +91 98400-65650
           </a>
         </div>
         <button class="float-btn" aria-label="Call us" type="button">
