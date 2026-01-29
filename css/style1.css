@@ -15,7 +15,7 @@ body {
 .navbar {
   background: rgba(10, 15, 44, 0.85);
   backdrop-filter: blur(8px);
-  padding: 1rem 2rem;
+  /* padding: 1rem 2rem; */
 }
 
 .navbar-brand {
@@ -28,8 +28,8 @@ body {
 }
 
 .navbar-brand img {
-  height: 30px;
-  width: 30px;
+  height: 60px;
+  width: 60px;
 }
 
 .nav-link {
