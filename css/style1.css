@@ -428,12 +428,20 @@ footer .social-media .fa {
 }
 
 .logo-item {
-  height: 60px;
+  height: 90px;
   width: auto;
   margin: 0 40px;
   transition: all 0.3s;
   filter: none;
   opacity: 1;
+}
+
+.logo-item.sophos-logo {
+  height: 190px;
+}
+
+.logo-item.fortinet-logo {
+  height: 190px;
 }
 
 .logo-item:hover {
@@ -847,7 +855,11 @@ footer .fa {
   }
 
   .logo-item {
-    height: 45px;
+    height: 70px;
+  }
+
+  .logo-item.sophos-logo {
+    height: 90px;
   }
 
   .navbar {
@@ -871,7 +883,11 @@ footer .fa {
     font-size: 0.8rem;
   }
   .logo-item {
-    height: 35px;
+    height: 55px;
+  }
+
+  .logo-item.sophos-logo {
+    height: 70px;
   }
 }
 
