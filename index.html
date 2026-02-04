@@ -1,62 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spudweb - Digital Infra</title>
 
-    <!-- Bootstrap & Icons -->
+    <!-- Page Title -->
+    <title>SPUDWEB – Digital Infra</title>
+
+    <!-- SEO Meta Description -->
+    <meta
+      name="description"
+      content="SPUDWEB delivers end-to-end IT infrastructure and digital transformation solutions including cloud computing, connectivity, cybersecurity, IT consulting and enterprise platforms to help businesses scale securely and efficiently."
+    />
+
+    <!-- SEO Meta Keywords (Home Page – High Level Only) -->
+    <meta
+      name="keywords"
+      content="IT Infrastructure Solutions, Digital Transformation, Cloud Solutions, Connectivity Solutions, Cybersecurity Services, IT Consulting, Enterprise IT Services, Secure IT Infrastructure, Cloud Computing, Automation"
+    />
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
+    <!-- Font Awesome Icons -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
       rel="stylesheet"
     />
 
-    <!-- Font Awesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style1.css" />
 
+    <!-- Page Styles -->
+    <style>
+      /* White background for main content */
+      .main-content {
+        background-color: #ffffff;
+      }
+
+      /* Responsive logo sizing */
+      .navbar-brand img {
+        max-height: 60px;
+        max-width: 60px;
+      }
+
+      @media (max-width: 768px) {
+        .navbar-brand img {
+          max-height: 60px;
+          max-width: 60px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .navbar-brand img {
+          max-height: 50px;
+          max-width: 50px;
+        }
+      }
+
+      /* Footer logo responsiveness */
+      .footer-logo {
+        max-height: 40px;
+        max-width: 40px;
+      }
+
+      @media (max-width: 768px) {
+        .footer-logo {
+          max-height: 35px;
+          max-width: 35px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .footer-logo {
+          max-height: 30px;
+          max-width: 30px;
+        }
+      }
+    </style>
   </head>
 
-  <body>
+  <body class="loading">
+    <!-- Loader -->
+    <div id="loader">
+      <img src="images/logo/loader-pic.png" alt="Loading..." />
+      <p class="loader-text">DIGITAL INFRA</p>
+    </div>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">SPUDWEB</a>
-        <button
-          class="navbar-toggler text-white"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
+    <nav
+      class="navbar navbar-expand-lg fixed-top d-flex justify-content-between align-items-center px-3"
+    >
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img
+          src="images/logo/Spudweb Logo.png"
+          alt="Spudweb Logo"
+          class="img-fluid me-2"
+        />
+        <span class="d-none d-md-inline spudweb-font">SPUDWEB</span>
+      </a>
+      <button
+        class="navbar-toggler text-white"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="under-construction-1.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="under-construction.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
     </nav>
-
 
     <!-- Carousel -->
     <div
@@ -69,18 +139,19 @@
       <div class="carousel-inner">
         <div
           class="carousel-item active"
-          style="background-image: url('images/caro-1.jpg')"
+          style="background-image: url(&quot;images/caro-1.jpg&quot;)"
         >
           <div class="carousel-caption">
-            <h1>Organize Your Digital Infrastructure</h1>
+            <h1>Organize Your Digital Infrastructure - THE Components</h1>
             <p>
-              SPUDWEB stands as a testament to what exceptional service and technology-driven solutions should be—reliable, forward-thinking, and customer-focused.
-            
-
-              Transform your business with comprehensive digital solutions and
-              expert IT consulting.
+              <span class="spudweb-font">SPUDWEB</span> stands as a testament to
+              what exceptional detailing and technology-driven solutions should
+              be—reliable, resilient, future proof, individual customer-focused
+              and need-based.<br />
+              Transform your business with comprehensive digital infra solutions
+              and expert IT consulting.
             </p>
-            <a href="services.html" class="btn btn-gradient-box mt-3"
+            <a href="under-construction.html" class="btn btn-gradient-box mt-3"
               >Explore Services</a
             >
           </div>
@@ -88,49 +159,79 @@
 
         <div
           class="carousel-item"
-          style="background-image: url('images/caro-8.jpg')"
+          style="background-image: url(&quot;images/caro-8.jpg&quot;)"
         >
           <div class="carousel-caption">
-            <h1>Empower with Secure Connectivity</h1>
+            <h1>Empower with Secure Connectivity - THE Connectivity</h1>
             <p>
-              Secure your business with advanced cybersecurity and data
-              protection solutions.
+              Provide your business with advanced connectivity solutions on both
+              data and voice.
             </p>
-            <p>Modernize your IT ecosystem with scalable infrastructure solutions that enhance efficiency, reliability, and long-term growth.</p>
-            <a href="about.html" class="btn btn-gradient-box mt-3"
-              >Learn More</a
+            <p>
+              Modernize your IT ecosystem with on-premise or co-location based
+              scalable infrastructure solutions that enhance efficiency,
+              reliability, and long-term growth
+            </p>
+            <a href="under-construction.html" class="btn btn-gradient-box mt-3"
+              >Explore Services</a
             >
           </div>
         </div>
 
         <div
           class="carousel-item"
-          style="background-image: url('images/caro-3.jpg')"
+          style="background-image: url(&quot;images/caro-3.jpg&quot;)"
         >
           <div class="carousel-caption">
-            <h1>Transform Through the Cloud</h1>
+            <h1>Transform Through the Cloud - THE Cloud</h1>
             <p>
               Deliver seamless digital experiences with unified cloud solutions.
             </p>
-            <p>Accelerate innovation with unified cloud platforms designed to optimize performance and simplify digital operations.</p>
-            <a href="services.html" class="btn btn-gradient-box mt-3"
-              >Get Started</a
+            <p>
+              Accelerate innovation with unified cloud platforms designed to
+              optimize performance and simplify digital operations.
+            </p>
+            <a href="under-construction.html" class="btn btn-gradient-box mt-3"
+              >Explore Services</a
             >
           </div>
         </div>
 
         <div
           class="carousel-item"
-          style="background-image: url('images/caro-4.jpg')"
+          style="background-image: url(&quot;images/caro-4.jpg&quot;)"
         >
           <div class="carousel-caption">
-            
-            <h1>Delivering Trust Through Technology</h1>
-            <p>We promise to deliver future-ready technology solutions.</p>
-             <p>Our dynamic approach and unwavering commitment to quality have earned us the confidence of a wide range of satisfied clients.</p>
-            
-            <a href="contact.html" class="btn btn-gradient-box mt-3"
-              >Contact Us</a
+            <h1>Secure your infrastructure - THE Cybersecurity</h1>
+            <p>
+              Stay prepared and ready for attacks on your networks which are
+              internal or external.. The security milestone is a moving one and
+              needs constant planning and deployment.
+            </p>
+            <!-- <p>Our dynamic approach and unwavering commitment to quality have earned us the confidence of a wide range of satisfied clients.</p> -->
+
+            <a href="under-construction.html" class="btn btn-gradient-box mt-3"
+              >Explore Services</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="carousel-item"
+          style="background-image: url(&quot;images/it-counsulting.jpg&quot;)"
+        >
+          <div class="carousel-caption">
+            <h1>
+              Understanding information risk, compliance and IT security
+              services - THE Consulting
+            </h1>
+            <p>
+              Assess your business on potential vulnerabilities and ways to
+              mitigate them.
+            </p>
+
+            <a href="under-construction.html" class="btn btn-gradient-box mt-3"
+              >Explore Services</a
             >
           </div>
         </div>
@@ -142,7 +243,10 @@
       <div class="container-fluid">
         <div class="row justify-content-center mb-4">
           <div class="col-md-8 text-center">
-            <h3 class="mb-3 text-dark">Trusted by Leading Companies</h3>
+            <h3 class="mb-3 text-dark">
+              We promise to deliver trust through technology with unwavering
+              commitment.
+            </h3>
             <p class="text-muted">
               We partner with global leaders to deliver excellence
             </p>
@@ -151,29 +255,218 @@
 
         <div class="logo-scroll-container">
           <div class="logo-scroll-track">
-            <img src="images/logo/avaya.jfif" alt="Avaya" class="logo-item" />
+            <img src="images/logo/Sify.png" alt="Sify" class="logo-item" />
             <img src="images/logo/cisco.png" alt="Cisco" class="logo-item" />
+            <img
+              src="images/logo/fortinet.png"
+              alt="fortinet"
+              class="logo-item fortinet-logo"
+            />
+            <img
+              src="images/logo/sophos.png"
+              alt="sophos"
+              class="logo-item sophos-logo"
+            />
+            <img
+              src="images/logo/sonicwall.png"
+              alt="sonicwall"
+              class="logo-item sonicwall-logo"
+            />
+
+            <img
+              src="images/logo/paloalto.png"
+              alt="paloalto"
+              class="logo-item paloalto-logo"
+            />
             <img src="images/logo/dell.png" alt="Dell" class="logo-item" />
-            <img src="images/logo/hp.png" alt="HP" class="logo-item" />
+            <img src="images/logo/hpe.png" alt="hpe" class="logo-item" />
             <img src="images/logo/IBM.png" alt="IBM" class="logo-item" />
-            <img src="images/logo/intel.png" alt="Intel" class="logo-item" />
             <img
               src="images/logo/microsoft.png"
-              alt="Microsoft"
+              alt="microsoft"
+              class="logo-item microsoft-logo"
+            />
+
+            <img
+              src="images/logo/commscope.png"
+              alt="commscope"
+              class="logo-item commscope-logo"
+            />
+            <img src="images/logo/molex.png" alt="molex" class="logo-item" />
+            <img
+              src="images/logo/netrack.png"
+              alt="netrack"
+              class="logo-item netrack-logo"
+            />
+            <img src="images/logo/Adobe.png" alt="Adobe" class="logo-item" />
+            <img
+              src="images/logo/CorelDraw.png"
+              alt="CorelDraw"
               class="logo-item"
             />
+
+            <img src="images/logo/veeam.png" alt="veeam" class="logo-item" />
+            <img
+              src="images/logo/Nutanix.png"
+              alt="Nutanix"
+              class="logo-item Nutanix-logo"
+            />
+            <img src="images/logo/NetApp.png" alt="NetApp" class="logo-item NetApp-logo" />
+            <img src="images/logo/Poly.png" alt="Poly" class="logo-item" />
+            <img
+              src="images/logo/Logitech.png"
+              alt="Logitech"
+              class="logo-item Logitech-logo"
+            />
+
+            <img src="images/logo/jabra.png" alt="jabra" class="logo-item jabra-logo" />
+            <img
+              src="images/logo/Crowdstrike.png"
+              alt="Crowdstrike"
+              class="logo-item Crowdstrike-logo"
+            />
+            <img
+              src="images/logo/SentinelOne.png"
+              alt="SentinelOne"
+              class="logo-item SentinelOne-logo"
+            />
+            <img
+              src="images/logo/Trend_Micro.png"
+              alt="Trend_Micro"
+              class="logo-item"
+            />
+            <img
+              src="images/logo/Seqrite.png"
+              alt="Seqrite"
+              class="logo-item"
+            />
+
+            <img
+              src="images/logo/Broadcom.png"
+              alt="Broadcom"
+              class="logo-item Broadcom-logo"
+            />
+            <img
+              src="images/logo/netskope.png"
+              alt="netskope"
+              class="logo-item netskope-logo"
+            />
+            <img
+              src="images/logo/Zscaler.png"
+              alt="Zscaler"
+              class="logo-item Zscaler-logo"
+            />
+            <img src="images/logo/RUCKUS.png" alt="RUCKUS" class="logo-item RUCKUS-logo" />
+            <img src="images/logo/DigiCert.png" alt="DigiCert" class="logo-item DigiCert-logo" />
+            <img src="images/logo/GeoTrust.png" alt="GeoTrust" class="logo-item GeoTrust-logo" />
+            <img src="images/logo/Thawte.png" alt="Thawte" class="logo-item Thawte-logo" />
+
             <!-- duplicate for infinite loop -->
-            <img src="images/logo/avaya.jfif" alt="Avaya" class="logo-item" />
+            <img src="images/logo/Sify.png" alt="Sify" class="logo-item" />
             <img src="images/logo/cisco.png" alt="Cisco" class="logo-item" />
+            <img
+              src="images/logo/fortinet.png"
+              alt="fortinet"
+              class="logo-item fortinet-logo"
+            />
+            <img
+              src="images/logo/sophos.png"
+              alt="sophos"
+              class="logo-item sophos-logo"
+            />
+            <img
+              src="images/logo/sonicwall.png"
+              alt="sonicwall"
+              class="logo-item sonicwall-logo"
+            />
+
+            <img
+              src="images/logo/paloalto.png"
+              alt="paloalto"
+              class="logo-item paloalto-logo"
+            />
             <img src="images/logo/dell.png" alt="Dell" class="logo-item" />
-            <img src="images/logo/hp.png" alt="HP" class="logo-item" />
+            <img src="images/logo/hpe.png" alt="hpe" class="logo-item" />
             <img src="images/logo/IBM.png" alt="IBM" class="logo-item" />
-            <img src="images/logo/intel.png" alt="Intel" class="logo-item" />
             <img
               src="images/logo/microsoft.png"
-              alt="Microsoft"
+              alt="microsoft"
+              class="logo-item microsoft-logo"
+            />
+
+            <img
+              src="images/logo/commscope.png"
+              alt="commscope"
+              class="logo-item commscope-logo"
+            />
+            <img src="images/logo/molex.png" alt="molex" class="logo-item" />
+            <img
+              src="images/logo/netrack.png"
+              alt="netrack"
+              class="logo-item netrack-logo"
+            />
+            <img src="images/logo/Adobe.png" alt="Adobe" class="logo-item" />
+            <img
+              src="images/logo/CorelDraw.png"
+              alt="CorelDraw"
               class="logo-item"
             />
+
+            <img src="images/logo/veeam.png" alt="veeam" class="logo-item" />
+            <img
+              src="images/logo/Nutanix.png"
+              alt="Nutanix"
+              class="logo-item"
+            />
+            <img src="images/logo/NetApp.png" alt="NetApp" class="logo-item" />
+            <img src="images/logo/Poly.png" alt="Poly" class="logo-item" />
+            <img
+              src="images/logo/Logitech.png"
+              alt="Logitech"
+              class="logo-item"
+            />
+
+            <img src="images/logo/jabra.png" alt="jabra" class="logo-item" />
+            <img
+              src="images/logo/Crowdstrike.png"
+              alt="Crowdstrike"
+              class="logo-item"
+            />
+            <img
+              src="images/logo/SentinelOne.png"
+              alt="SentinelOne"
+              class="logo-item"
+            />
+            <img
+              src="images/logo/Trend_Micro.png"
+              alt="Trend_Micro"
+              class="logo-item"
+            />
+            <img
+              src="images/logo/Seqrite.png"
+              alt="Seqrite"
+              class="logo-item"
+            />
+
+            <img
+              src="images/logo/Broadcom.png"
+              alt="Broadcom"
+              class="logo-item"
+            />
+            <img
+              src="images/logo/netskope.png"
+              alt="netskope"
+              class="logo-item"
+            />
+            <img
+              src="images/logo/Zscaler.png"
+              alt="Zscaler"
+              class="logo-item"
+            />
+            <img src="images/logo/RUCKUS.png" alt="RUCKUS" class="logo-item" />
+            <img src="images/logo/DigiCert.png" alt="DigiCert" class="logo-item" />
+            <img src="images/logo/GeoTrust.png" alt="GeoTrust" class="logo-item" />
+            <img src="images/logo/Thawte.png" alt="Thawte" class="logo-item" />
           </div>
         </div>
 
@@ -199,37 +492,162 @@
             <div class="row g-3">
               <div class="col-6 col-md-3">
                 <div class="logo-card">
-                  <img src="images/logo/avaya.jfif" />
+                  <img src="images/logo/Sify.png" alt="Sify" />
                 </div>
               </div>
               <div class="col-6 col-md-3">
                 <div class="logo-card">
-                  <img src="images/logo/cisco.png" />
+                  <img src="images/logo/cisco.png" alt="Cisco" />
                 </div>
               </div>
               <div class="col-6 col-md-3">
                 <div class="logo-card">
-                  <img src="images/logo/dell.png" />
+                  <img src="images/logo/fortinet.png" alt="Fortinet" />
                 </div>
               </div>
               <div class="col-6 col-md-3">
                 <div class="logo-card">
-                  <img src="images/logo/hp.png" />
+                  <img src="images/logo/sophos.png" alt="Sophos" />
                 </div>
               </div>
               <div class="col-6 col-md-3">
                 <div class="logo-card">
-                  <img src="images/logo/IBM.png" />
+                  <img src="images/logo/sonicwall.png" alt="SonicWall" />
                 </div>
               </div>
               <div class="col-6 col-md-3">
                 <div class="logo-card">
-                  <img src="images/logo/intel.png" />
+                  <img src="images/logo/paloalto.png" alt="Palo Alto" />
                 </div>
               </div>
               <div class="col-6 col-md-3">
                 <div class="logo-card">
-                  <img src="images/logo/microsoft.png" />
+                  <img src="images/logo/dell.png" alt="Dell" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/hpe.png" alt="HPE" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/IBM.png" alt="IBM" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/microsoft.png" alt="Microsoft" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/commscope.png" alt="CommScope" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/molex.png" alt="Molex" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/netrack.png" alt="Netrack" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/Adobe.png" alt="Adobe" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/CorelDraw.png" alt="CorelDraw" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/veeam.png" alt="Veeam" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/Nutanix.png" alt="Nutanix" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/NetApp.png" alt="NetApp" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/Poly.png" alt="Poly" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/Logitech.png" alt="Logitech" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/jabra.png" alt="Jabra" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/Crowdstrike.png" alt="CrowdStrike" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/SentinelOne.png" alt="SentinelOne" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/Trend_Micro.png" alt="Trend Micro" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/Seqrite.png" alt="Seqrite" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/Broadcom.png" alt="Broadcom" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/netskope.png" alt="Netskope" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/Zscaler.png" alt="Zscaler" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/RUCKUS.png" alt="RUCKUS" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/DigiCert.png" alt="DigiCert" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/GeoTrust.png" alt="GeoTrust" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-card">
+                  <img src="images/logo/Thawte.png" alt="Thawte" />
                 </div>
               </div>
             </div>
@@ -241,19 +659,25 @@
     <section class="ftco-section">
       <div class="container">
         <div class="row justify-content-center pb-5">
-          <div class="col-lg-12 heading-section text-center ftco-animate modern-intro">
+          <div
+            class="col-lg-12 heading-section text-center ftco-animate modern-intro"
+          >
             <h2 class="mb-4 modern-heading">
-              More than <span class="highlight-number">35+</span> years we provide
-              <span class="highlight-text">Digital Infrastructure</span>
+              More than <span class="highlight-number">25+</span> years of
+              experience in technology space providing
+              <span class="highlight-text">Digital Infra</span>
             </h2>
             <p class="modern-paragraph">
-              SPUDWEB specializes in providing turnkey solutions in IT Infrastructure.
-              Our partnership with widely renowned companies like Wipro, Microsoft, Sify,
-              and Safescrypt has not only equipped us with cutting-edge technological
-              solutions but also led the company to immense growth. Established in 1996,
-              SPUDWEB has gained the trust and partnership of many satisfied clients,
-              thanks to our dynamic approach. SPUDWEB is the perfect example of what
-              quality service and technology-based solutions should be.
+              <span class="spudweb-font">SPUDWEB</span> specializes in providing
+              turnkey solutions in IT Infrastructure.Our partnership with widely
+              renowned companies has not only equipped us with cutting-edge
+              technological solutions but also led the company to immense
+              growth. Established in 1996,
+              <span class="spudweb-font">SPUDWEB</span> has gained the trust and
+              partnership of many satisfied clients, thanks to our dynamic
+              approach. <span class="spudweb-font">SPUDWEB</span> is the perfect
+              example of what quality service and technology-based solutions
+              should be.
             </p>
           </div>
         </div>
@@ -317,11 +741,13 @@
               </div>
               <div class="solution-content" id="components-content">
                 <p>
-                  Hardware and software solutions including servers, networking
-                  equipment, and enterprise applications for robust
-                  infrastructure.
+                  Hardware and software solutions including Passive, Switches,
+                  Routers, Firewall, Servers, Storage, Video and Audio
+                  Collaboration for robust infrastructure.
                 </p>
-                <a href="services.html" class="btn btn-outline-primary btn-sm"
+                <a
+                  href="under-construction.html"
+                  class="btn btn-outline-primary btn-sm"
                   >Learn More</a
                 >
               </div>
@@ -335,11 +761,12 @@
               </div>
               <div class="solution-content" id="connectivity-content">
                 <p>
-                  High-speed internet, SD-WAN, VPN services, and global network
-                  connectivity solutions for seamless communication.
+                  High-speed internet, Global network connectivity, MPLS,
+                  SD-WAN, CDN, NOC and SOC, Co-Location and Hosting Services for
+                  seamless converged communications.
                 </p>
                 <a
-                  href="services.html"
+                  href="under-construction.html"
                   class="btn btn-outline-primary btn-sm"
                   >Learn More</a
                 >
@@ -354,10 +781,12 @@
               </div>
               <div class="solution-content" id="cloud-content">
                 <p>
-                  Cloud migration, multi-cloud management, AWS, Azure, and GCP
-                  services with cost optimization and security.
+                  Private Cloud, Cloud migration, multi-cloud management, AWS,
+                  Azure, and GCP services with cost optimization and security.
                 </p>
-                <a href="services.html" class="btn btn-outline-primary btn-sm"
+                <a
+                  href="under-construction.html"
+                  class="btn btn-outline-primary btn-sm"
                   >Learn More</a
                 >
               </div>
@@ -369,15 +798,18 @@
           <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="solution-card" data-target="cybersecurity">
               <div class="card-header">
-                <h4>Cyber Security </h4>
+                <h4>CyberSecurity</h4>
                 <span class="toggle-icon">↓</span>
               </div>
               <div class="solution-content" id="cybersecurity-content">
                 <p>
-                  Advanced threat protection, vulnerability assessments,
-                  compliance auditing, and data encryption services.
+                  Endpoint protection, server and cloud protection, Advanced
+                  threat protection, DLP, vulnerability assessments, compliance
+                  auditing, SSL and PKI
                 </p>
-                <a href="services.html" class="btn btn-outline-primary btn-sm"
+                <a
+                  href="under-construction.html"
+                  class="btn btn-outline-primary btn-sm"
                   >Learn More</a
                 >
               </div>
@@ -391,10 +823,12 @@
               </div>
               <div class="solution-content" id="consulting-content">
                 <p>
-                  Expert IT consulting services including infrastructure
-                  planning, digital transformation, and 24/7 technical support.
+                  Providing risk management consulting, compliance management
+                  and IT security services.
                 </p>
-                <a href="services.html" class="btn btn-outline-primary btn-sm"
+                <a
+                  href="under-construction.html"
+                  class="btn btn-outline-primary btn-sm"
                   >Learn More</a
                 >
               </div>
@@ -404,125 +838,129 @@
       </div>
     </section>
 
-    <!-- ================== About / Info Section ================== -->
     <!-- ================= ABOUT INFO SECTION ================= -->
-<section class="about-info-section py-5" id="about">
-  <div class="container">
-    <div class="row align-items-center">
-      
-      <!-- Left Content -->
-      <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="800">
-        <h2 class="fw-bold mb-3 gradient-title">
-          Building Digital Infrastructure for the Future
-        </h2>
-        <p class="text-muted mb-4">
-          For over three decades, Spudweb has been empowering organizations
-          through innovative IT solutions, scalable cloud infrastructure,
-          and secure connectivity. Our goal is to help businesses stay
-          agile, connected, and future-ready.
-        </p>
-
-        <!-- Accordion -->
-        <div class="accordion" id="aboutAccordion">
-          <!-- Accordion Item 1 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                01. What makes Spudweb a trusted IT partner?
-              </button>
+    <section class="about-info-section py-5" id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Content -->
+          <div
+            class="col-lg-6 mb-4 mb-lg-0"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
+            <h2 class="fw-bold mb-3 gradient-title">
+              Building Digital Infrastructure for the Future
             </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#aboutAccordion"
-            >
-              <div class="accordion-body">
-                Our 35+ years of experience combined with technical
-                expertise and industry partnerships ensure reliable, secure,
-                and future-driven infrastructure for all business sizes.
+            <p class="text-muted mb-4">
+              For nearly three decades, Spudweb has been empowering
+              organizations through innovative IT solutions, scalable cloud
+              infrastructure, and secure connectivity. Our goal is to help
+              businesses stay agile, connected, and future-ready.
+            </p>
+
+            <!-- Accordion -->
+            <div class="accordion" id="aboutAccordion">
+              <!-- Accordion Item 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    01. What makes Spudweb a trusted IT partner?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#aboutAccordion"
+                >
+                  <div class="accordion-body">
+                    Our 25+ years of experience combined with technical
+                    expertise and industry partnerships ensure reliable, secure,
+                    and future-driven infrastructure for all business sizes.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    02. How do we support digital transformation?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#aboutAccordion"
+                >
+                  <div class="accordion-body">
+                    By integrating cloud, cybersecurity, and data-driven
+                    solutions that modernize legacy systems and accelerate
+                    innovation across your organization.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    03. What industries do we serve?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#aboutAccordion"
+                >
+                  <div class="accordion-body">
+                    We partner with organisations who need digital infra. to
+                    build resilient and secure technology ecosystems.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Accordion Item 2 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                02. How do we support digital transformation?
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#aboutAccordion"
-            >
-              <div class="accordion-body">
-                By integrating cloud, cybersecurity, and data-driven
-                solutions that modernize legacy systems and accelerate
-                innovation across your organization.
-              </div>
-            </div>
-          </div>
-
-          <!-- Accordion Item 3 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                03. What industries do we serve?
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#aboutAccordion"
-            >
-              <div class="accordion-body">
-                We partner with enterprises across finance, healthcare,
-                manufacturing, and telecommunications to build resilient and
-                secure technology ecosystems.
-              </div>
-            </div>
+          <!-- Right Image -->
+          <div
+            class="col-lg-6 text-center"
+            data-aos="fade-left"
+            data-aos-duration="800"
+          >
+            <img
+              src="images/caro-5.jpg"
+              alt="Digital Infrastructure"
+              class="img-fluid rounded shadow-lg"
+            />
           </div>
         </div>
       </div>
-
-      <!-- Right Image -->
-      <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="800">
-        <img
-          src="images/caro-5.jpg"
-          alt="Digital Infrastructure"
-          class="img-fluid rounded shadow-lg"
-        />
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ================= END ABOUT INFO SECTION ================= -->
-
+    </section>
+    <!-- ================= END ABOUT INFO SECTION ================= -->
 
     <!-- Footer -->
     <!-- ================= Footer ================= -->
@@ -535,7 +973,7 @@
         <div class="row gy-4">
           <!-- Company Info -->
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <h5 class="fw-bold mb-3 text-uppercase">SPUDWEB</h5>
+            <h5 class="fw-bold mb-3 text-uppercase spudweb-font">SPUDWEB</h5>
             <p class="small">
               Empowering businesses through innovative IT solutions, digital
               transformation, and secure infrastructure services.
@@ -589,11 +1027,19 @@
 
           <!-- Quick Links -->
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <h5 class="fw-bold mb-3 text-uppercase ">Quick Links</h5>
+            <h5 class="fw-bold mb-3 text-uppercase">Quick Links</h5>
             <ul class="list-unstyled">
               <li><a href="index.html" class="footer-link">Home</a></li>
-              <li><a href="about.html" class="footer-link">About Us</a></li>
-              <li><a href="services.html" class="footer-link">Services</a></li>
+              <li>
+                <a href="under-construction-1.html" class="footer-link"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="under-construction.html" class="footer-link"
+                  >Services</a
+                >
+              </li>
               <li><a href="contact.html" class="footer-link">Contact</a></li>
             </ul>
           </div>
@@ -610,9 +1056,7 @@
                 <a href="" class="footer-link">Consulting</a>
               </li>
               <li>
-                <a href="" class="footer-link"
-                  >Cyber Security</a
-                >
+                <a href="" class="footer-link">CyberSecurity</a>
               </li>
               <li>
                 <a href="" class="footer-link">Connectivity</a>
@@ -622,16 +1066,16 @@
 
           <!-- Contact Info -->
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <h5 class="fw-bold mb-3 text-uppercase" >Have a Question?</h5>
+            <h5 class="fw-bold mb-3 text-uppercase">Have a Question?</h5>
             <ul class="list-unstyled small">
               <li class="mb-2">
-                <i class="fa fa-map-marker-alt me-2 text-info"></i> 1 Rajambal Street T Nagar Near Hindi Prachar Sabha
-                      Chennai 600017
+                <i class="fa fa-map-marker-alt me-2 text-info"></i> 1 Rajambal
+                Street T Nagar Near Hindi Prachar Sabha Chennai 600017
               </li>
               <li class="mb-2">
                 <i class="fa fa-phone me-2 text-info"></i>
-                <a href="tel:+919876543210" class="footer-link"
-                  >+91 98765 43210</a
+                <a href="tel:+91 98400-65650" class="footer-link"
+                  >+91 98400-65650</a
                 >
               </li>
               <li class="mb-2">
@@ -649,24 +1093,30 @@
         <!-- Copyright -->
         <div class="text-center pt-2">
           <p class="mb-0 small">
-            © <span id="year"></span> <strong>SPUDWEB</strong>. All Rights
-            Reserved. | spudweb.in
+            © <span id="year"></span>
+            <strong class="spudweb-font">SPUDWEB</strong>. All Rights Reserved.
+            | spudweb.in
           </p>
         </div>
       </div>
     </footer>
 
     <!-- FLOATING CONTACT WIDGET -->
-    <div class="floating-icons" id="floatingContacts" aria-hidden="false">
+    <div
+      class="floating-icons"
+      id="floatingContacts"
+      aria-hidden="false"
+      style="opacity: 0; transform: translateY(20px); pointer-events: none"
+    >
       <!-- Phone -->
       <div class="float-item" data-type="phone" data-open="false">
         <div class="contact-pill" aria-hidden="true">
           <a
             class="contact-link"
-            href="tel:+912323345678"
+            href="tel:+91 98400-65650"
             style="color: inherit; text-decoration: none"
           >
-            +91 2323345678
+            +91 98400-65650
           </a>
         </div>
         <button class="float-btn" aria-label="Call us" type="button">
@@ -767,15 +1217,6 @@
         document.addEventListener("keydown", (ev) => {
           if (ev.key === "Escape") collapseAll();
         });
-
-        // optional: show a subtle entrance animation after load
-        window.addEventListener("load", () => {
-          // small delayed fade/slide-in
-          container.style.transition =
-            "transform 420ms ease, opacity 420ms ease";
-          container.style.transform = "translateY(6px)";
-          container.style.opacity = "1";
-        });
       })();
     </script>
 
@@ -820,21 +1261,24 @@
         });
 
         // Modern Intro Animation
-        const modernIntro = document.querySelector('.modern-intro');
+        const modernIntro = document.querySelector(".modern-intro");
         if (modernIntro) {
-          const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                setTimeout(() => {
-                  entry.target.classList.add('animate-in');
-                }, 200);
-                observer.unobserve(entry.target);
-              }
-            });
-          }, {
-            threshold: 0.3,
-            rootMargin: '0px 0px -50px 0px'
-          });
+          const observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  setTimeout(() => {
+                    entry.target.classList.add("animate-in");
+                  }, 200);
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            {
+              threshold: 0.3,
+              rootMargin: "0px 0px -50px 0px",
+            },
+          );
 
           observer.observe(modernIntro);
         }
@@ -843,5 +1287,25 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Loader Script -->
+    <script>
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          document.getElementById("loader").style.display = "none";
+          document.body.classList.remove("loading");
+
+          // Show floating contact widget
+          const floatingContacts = document.getElementById("floatingContacts");
+          if (floatingContacts) {
+            floatingContacts.style.transition =
+              "transform 420ms ease, opacity 420ms ease";
+            floatingContacts.style.transform = "translateY(6px)";
+            floatingContacts.style.opacity = "1";
+            floatingContacts.style.pointerEvents = "auto";
+          }
+        }, 3000); // 3 seconds
+      });
+    </script>
   </body>
 </html>

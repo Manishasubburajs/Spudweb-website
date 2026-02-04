@@ -1,6 +1,17 @@
 /* -------------------
-   GLOBAL
+    GLOBAL
 ------------------- */
+@font-face {
+  font-family: "CustomFont";
+  src: url("../fonts/24178_M025096D.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.spudweb-font {
+  font-family: "CustomFont", sans-serif !important;
+}
+
 body {
   background-color: #0a0f2c; /* Ink blue base tone */
   color: #fff;
@@ -9,13 +20,47 @@ body {
   padding: 0;
 }
 
+body.hidden {
+  display: none;
+}
+
+/* Loader */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: #0a0f2c; */
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#loader img {
+  max-width: 600px;
+  max-height: 600px;
+  margin-bottom: 20px;
+}
+
+.loader-text {
+  color: #08739e;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
 /* -------------------
    NAVBAR
 ------------------- */
 .navbar {
   background: rgba(10, 15, 44, 0.85);
   backdrop-filter: blur(8px);
-  padding: 1rem 2rem;
+  /* padding: 1rem 2rem; */
 }
 
 .navbar-brand {
@@ -28,8 +73,8 @@ body {
 }
 
 .navbar-brand img {
-  height: 30px;
-  width: 30px;
+  height: 60px;
+  width: 60px;
 }
 
 .nav-link {
@@ -388,18 +433,88 @@ footer .social-media .fa {
 
 .logo-scroll-track {
   display: flex;
-  width: calc(200% + 100px);
-  animation: scroll 30s linear infinite;
+  width: max-content;  
+  animation: scroll 50s linear infinite;
   align-items: center;
 }
 
 .logo-item {
-  height: 60px;
+  height: 70px;
   width: auto;
   margin: 0 40px;
   transition: all 0.3s;
   filter: none;
   opacity: 1;
+}
+
+.logo-item.sonicwall-logo {
+  height: 55px;
+}
+
+
+.logo-item.microsoft-logo {
+  height: 150px;
+}
+
+.logo-item.paloalto-logo {
+  height: 150px;
+}
+
+.logo-item.commscope-logo {
+  height: 100px;
+}
+
+.logo-item.netrack-logo {
+  height: 160px;
+}
+
+.logo-item.sophos-logo {
+  height: 240px;
+}
+
+.logo-item.fortinet-logo {
+  height: 190px;
+}
+
+.logo-item.Nutanix-logo {
+  height: 150px;
+}
+
+.logo-item.NetApp-logo {
+  height: 30px;
+}
+.logo-item.Logitech-logo {
+  height: 30px;
+}
+.logo-item.jabra-logo {
+  height: 150px;
+}
+.logo-item.Crowdstrike-logo {
+  height: 150px;
+}
+.logo-item.SentinelOne-logo {
+  height: 40px;
+}
+.logo-item.Broadcom-logo {
+  height: 40px;
+}
+.logo-item.netskope-logo {
+  height: 100px;
+}
+.logo-item.Zscaler-logo {
+  height: 40px;
+}
+.logo-item.RUCKUS-logo {
+  height: 100px;
+}
+.logo-item.DigiCert-logo {
+  height: 100px;
+}
+.logo-item.Thawte-logo {
+  height: 80px;
+}
+.logo-item.GeoTrust-logo {
+  height: 40px;
 }
 
 .logo-item:hover {
@@ -439,9 +554,9 @@ footer .social-media .fa {
 .logo-card {
   background: #f8f9fa;
   border-radius: 12px;
-  padding: 15px;
+  padding: 20px;
   text-align: center;
-  height: 120px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -450,14 +565,39 @@ footer .social-media .fa {
 }
 
 .logo-card img {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   object-fit: contain;
 }
 
 .logo-card:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive logo modal */
+@media (max-width: 768px) {
+  .logo-card {
+    height: 120px;
+    padding: 15px;
+  }
+
+  .logo-card img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-card {
+    height: 100px;
+    padding: 10px;
+  }
+
+  .logo-card img {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 /* -------------------
@@ -788,7 +928,11 @@ footer .fa {
   }
 
   .logo-item {
-    height: 45px;
+    height: 70px;
+  }
+
+  .logo-item.sophos-logo {
+    height: 90px;
   }
 
   .navbar {
@@ -812,7 +956,11 @@ footer .fa {
     font-size: 0.8rem;
   }
   .logo-item {
-    height: 35px;
+    height: 55px;
+  }
+
+  .logo-item.sophos-logo {
+    height: 70px;
   }
 }
 
