@@ -433,13 +433,13 @@ footer .social-media .fa {
 
 .logo-scroll-track {
   display: flex;
-  width: calc(200% + 100px);
+  width: max-content;  
   animation: scroll 30s linear infinite;
   align-items: center;
 }
 
 .logo-item {
-  height: 90px;
+  height: 70px;
   width: auto;
   margin: 0 40px;
   transition: all 0.3s;
@@ -447,12 +447,74 @@ footer .social-media .fa {
   opacity: 1;
 }
 
+.logo-item.sonicwall-logo {
+  height: 55px;
+}
+
+
+.logo-item.microsoft-logo {
+  height: 150px;
+}
+
+.logo-item.paloalto-logo {
+  height: 150px;
+}
+
+.logo-item.commscope-logo {
+  height: 100px;
+}
+
+.logo-item.netrack-logo {
+  height: 160px;
+}
+
 .logo-item.sophos-logo {
-  height: 190px;
+  height: 240px;
 }
 
 .logo-item.fortinet-logo {
   height: 190px;
+}
+
+.logo-item.Nutanix-logo {
+  height: 150px;
+}
+
+.logo-item.NetApp-logo {
+  height: 30px;
+}
+.logo-item.Logitech-logo {
+  height: 30px;
+}
+.logo-item.jabra-logo {
+  height: 150px;
+}
+.logo-item.Crowdstrike-logo {
+  height: 150px;
+}
+.logo-item.SentinelOne-logo {
+  height: 40px;
+}
+.logo-item.Broadcom-logo {
+  height: 40px;
+}
+.logo-item.netskope-logo {
+  height: 100px;
+}
+.logo-item.Zscaler-logo {
+  height: 40px;
+}
+.logo-item.RUCKUS-logo {
+  height: 100px;
+}
+.logo-item.DigiCert-logo {
+  height: 100px;
+}
+.logo-item.Thawte-logo {
+  height: 80px;
+}
+.logo-item.GeoTrust-logo {
+  height: 40px;
 }
 
 .logo-item:hover {
