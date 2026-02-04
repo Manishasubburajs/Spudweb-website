@@ -1006,7 +1006,7 @@
     </footer>
 
     <!-- FLOATING CONTACT WIDGET -->
-    <div class="floating-icons" id="floatingContacts" aria-hidden="false">
+    <div class="floating-icons" id="floatingContacts" aria-hidden="false" style="opacity: 0; transform: translateY(20px); pointer-events: none;">
       <!-- Phone -->
       <div class="float-item" data-type="phone" data-open="false">
         <div class="contact-pill" aria-hidden="true">
@@ -1117,14 +1117,7 @@
           if (ev.key === "Escape") collapseAll();
         });
 
-        // optional: show a subtle entrance animation after load
-        window.addEventListener("load", () => {
-          // small delayed fade/slide-in
-          container.style.transition =
-            "transform 420ms ease, opacity 420ms ease";
-          container.style.transform = "translateY(6px)";
-          container.style.opacity = "1";
-        });
+
       })();
     </script>
 
@@ -1202,6 +1195,15 @@
         setTimeout(function () {
           document.getElementById("loader").style.display = "none";
           document.body.classList.remove("loading");
+          
+          // Show floating contact widget
+          const floatingContacts = document.getElementById("floatingContacts");
+          if (floatingContacts) {
+            floatingContacts.style.transition = "transform 420ms ease, opacity 420ms ease";
+            floatingContacts.style.transform = "translateY(6px)";
+            floatingContacts.style.opacity = "1";
+            floatingContacts.style.pointerEvents = "auto";
+          }
         }, 3000); // 3 seconds
       });
     </script>
