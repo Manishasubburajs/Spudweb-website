@@ -271,7 +271,7 @@ body.hidden {
 /* Extra small phones */
 @media (max-width: 576px) {
   #heroCarousel .carousel-item {
-    height: 50vh;
+    height: 60vh;
   }
 
   .carousel-caption h1 {
