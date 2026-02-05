@@ -1291,30 +1291,36 @@
 
     <!-- Loader Script -->
     <script>
-      window.addEventListener("load", function () {
+      window.addEventListener("DOMContentLoaded", function () {
         const countdownElement = document.getElementById("countdown");
         let count = 3;
 
-        const countdownInterval = setInterval(function () {
-          count--;
-          if (count > 0) {
-            countdownElement.textContent = count;
-          } else {
-            clearInterval(countdownInterval);
-            document.getElementById("loader").style.display = "none";
-            document.body.classList.remove("loading");
+        // Set initial value after DOM is loaded to ensure correct styling
+        countdownElement.textContent = count;
 
-            // Show floating contact widget
-            const floatingContacts = document.getElementById("floatingContacts");
-            if (floatingContacts) {
-              floatingContacts.style.transition =
-                "transform 420ms ease, opacity 420ms ease";
-              floatingContacts.style.transform = "translateY(6px)";
-              floatingContacts.style.opacity = "1";
-              floatingContacts.style.pointerEvents = "auto";
+        // Start countdown after 1 second
+        setTimeout(function() {
+          const countdownInterval = setInterval(function () {
+            count--;
+            if (count > 0) {
+              countdownElement.textContent = count;
+            } else {
+              clearInterval(countdownInterval);
+              document.getElementById("loader").style.display = "none";
+              document.body.classList.remove("loading");
+
+              // Show floating contact widget
+              const floatingContacts = document.getElementById("floatingContacts");
+              if (floatingContacts) {
+                floatingContacts.style.transition =
+                  "transform 420ms ease, opacity 420ms ease";
+                floatingContacts.style.transform = "translateY(6px)";
+                floatingContacts.style.opacity = "1";
+                floatingContacts.style.pointerEvents = "auto";
+              }
             }
-          }
-        }, 1000); // 1 second interval
+          }, 1000); // 1 second interval
+        }, 1000); // Wait 1 second before first count change
       });
     </script>
   </body>
