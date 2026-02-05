@@ -88,6 +88,7 @@
     <div id="loader">
       <img src="images/logo/loader-pic.png" alt="Loading..." />
       <p class="loader-text">DIGITAL INFRA</p>
+      <div class="countdown" id="countdown">3</div>
     </div>
 
     <!-- Navbar -->
@@ -1291,20 +1292,29 @@
     <!-- Loader Script -->
     <script>
       window.addEventListener("load", function () {
-        setTimeout(function () {
-          document.getElementById("loader").style.display = "none";
-          document.body.classList.remove("loading");
+        const countdownElement = document.getElementById("countdown");
+        let count = 3;
 
-          // Show floating contact widget
-          const floatingContacts = document.getElementById("floatingContacts");
-          if (floatingContacts) {
-            floatingContacts.style.transition =
-              "transform 420ms ease, opacity 420ms ease";
-            floatingContacts.style.transform = "translateY(6px)";
-            floatingContacts.style.opacity = "1";
-            floatingContacts.style.pointerEvents = "auto";
+        const countdownInterval = setInterval(function () {
+          count--;
+          if (count > 0) {
+            countdownElement.textContent = count;
+          } else {
+            clearInterval(countdownInterval);
+            document.getElementById("loader").style.display = "none";
+            document.body.classList.remove("loading");
+
+            // Show floating contact widget
+            const floatingContacts = document.getElementById("floatingContacts");
+            if (floatingContacts) {
+              floatingContacts.style.transition =
+                "transform 420ms ease, opacity 420ms ease";
+              floatingContacts.style.transform = "translateY(6px)";
+              floatingContacts.style.opacity = "1";
+              floatingContacts.style.pointerEvents = "auto";
+            }
           }
-        }, 3000); // 3 seconds
+        }, 1000); // 1 second interval
       });
     </script>
   </body>
