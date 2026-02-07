@@ -107,7 +107,7 @@ body.hidden {
    NAVBAR
 ------------------- */
 .navbar {
-  background: rgba(10, 15, 44, 0.85);
+  background: #f9f9fa ;
   backdrop-filter: blur(8px);
   /* padding: 1rem 2rem; */
 }
@@ -115,7 +115,7 @@ body.hidden {
 .navbar-brand {
   font-size: 1.6rem;
   font-weight: 700;
-  color: #fff !important;
+  color: #08739e !important;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -127,17 +127,17 @@ body.hidden {
 }
 
 .nav-link {
-  color: #ccc !important;
+  color: #666 !important;
   margin-left: 15px;
   transition: 0.3s;
 }
 
 .nav-link:hover {
-  color: #fff !important;
+  color: #08739e !important;
 }
 
 .nav-item.active .nav-link {
-  color: #87ceeb !important;
+  color: #08739e !important;
   font-weight: 600;
 }
 
