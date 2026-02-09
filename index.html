@@ -88,7 +88,13 @@
     <div id="loader">
       <img src="images/logo/loader-pic.png" alt="Loading..." />
       <p class="loader-text">DIGITAL INFRA</p>
-      <div class="countdown" id="countdown">3</div>
+      <div class="battery-loader">
+        <div class="battery-container">
+          <div class="battery-cap"></div>
+          <div class="battery-level" id="batteryLevel"></div>
+        </div>
+        <div class="battery-text">Loading</div>
+      </div>
     </div>
 
     <!-- Navbar -->
@@ -1291,21 +1297,30 @@
 
     <!-- Loader Script -->
     <script>
-      window.addEventListener("DOMContentLoaded", function () {
-        const countdownElement = document.getElementById("countdown");
-        let count = 3;
-
-        // Set initial value after DOM is loaded to ensure correct styling
-        countdownElement.textContent = count;
-
-        // Start countdown after 1 second
+        window.addEventListener("DOMContentLoaded", function () {
+        // Start battery loading animation after 0.5 second
         setTimeout(function() {
-          const countdownInterval = setInterval(function () {
-            count--;
-            if (count > 0) {
-              countdownElement.textContent = count;
+          const batteryLevel = document.getElementById("batteryLevel");
+          let chargeLevel = 0;
+          const totalDuration = 3000; // 3 seconds total duration
+          const interval = 30; // 30ms interval for smooth animation
+          const chargePerInterval = 100 / (totalDuration / interval);
+          
+          const loadingInterval = setInterval(function () {
+            chargeLevel += chargePerInterval;
+            if (chargeLevel <= 100) {
+              batteryLevel.style.width = chargeLevel + "%";
+              
+              // Change battery color based on charge level
+              if (chargeLevel < 30) {
+                batteryLevel.style.background = "linear-gradient(90deg, #ff0000, #cc0000)";
+              } else if (chargeLevel < 70) {
+                batteryLevel.style.background = "linear-gradient(90deg, #ffff00, #cccc00)";
+              } else {
+                batteryLevel.style.background = "linear-gradient(90deg, #00ff00, #00cc00)";
+              }
             } else {
-              clearInterval(countdownInterval);
+              clearInterval(loadingInterval);
               document.getElementById("loader").style.display = "none";
               document.body.classList.remove("loading");
 
@@ -1319,8 +1334,8 @@
                 floatingContacts.style.pointerEvents = "auto";
               }
             }
-          }, 1000); // 1 second interval
-        }, 1000); // Wait 1 second before first count change
+          }, interval); // Smooth animation interval
+        }, 500); // Wait 0.5 second before starting
       });
     </script>
   </body>

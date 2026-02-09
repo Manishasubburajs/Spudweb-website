@@ -56,15 +56,54 @@ body.hidden {
   animation: fadeIn 1s ease;
 }
 
-.countdown {
-  color: #ffffff;
-  font-size: 4rem;
-  font-weight: 700;
-  text-align: center;
+.battery-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 20px 0;
-  font-family: "CustomFont", sans-serif;
+}
+
+.battery-container {
+  position: relative;
+  width: 120px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.battery-cap {
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 25px;
+  background: #ffffff;
+  border-radius: 0 2px 2px 0;
+}
+
+.battery-level {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #00ff00, #00cc00);
+  transition: width 0.5s ease-in-out;
+  border-radius: 5px 0 0 5px;
+}
+
+.battery-text {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  animation: countDownPulse 1s ease-in-out;
+  animation: fadeIn 1s ease;
 }
 
 /* Loader Animations */
@@ -85,21 +124,6 @@ body.hidden {
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes countDownPulse {
-  0% {
-    transform: scale(1);
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.5);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
   }
 }
 
