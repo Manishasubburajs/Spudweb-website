@@ -1304,11 +1304,15 @@
           let chargeLevel = 0;
           const totalDuration = 3000; // 3 seconds total duration
           const interval = 30; // 30ms interval for smooth animation
-          const chargePerInterval = 100 / (totalDuration / interval);
+          const steps = totalDuration / interval;
+          const chargePerInterval = 100 / steps;
+          let currentStep = 0;
           
           const loadingInterval = setInterval(function () {
-            chargeLevel += chargePerInterval;
-            if (chargeLevel <= 100) {
+            currentStep++;
+            chargeLevel = currentStep * chargePerInterval;
+            
+            if (currentStep <= steps) {
               batteryLevel.style.width = chargeLevel + "%";
               
               // Change battery color based on charge level
@@ -1320,19 +1324,27 @@
                 batteryLevel.style.background = "linear-gradient(90deg, #00ff00, #00cc00)";
               }
             } else {
+              // Ensure battery is fully charged when animation completes
+              batteryLevel.style.width = "100%";
+              batteryLevel.style.background = "linear-gradient(90deg, #00ff00, #00cc00)";
+              
               clearInterval(loadingInterval);
-              document.getElementById("loader").style.display = "none";
-              document.body.classList.remove("loading");
+              
+              // Short delay to show fully charged battery before hiding loader
+              setTimeout(function() {
+                document.getElementById("loader").style.display = "none";
+                document.body.classList.remove("loading");
 
-              // Show floating contact widget
-              const floatingContacts = document.getElementById("floatingContacts");
-              if (floatingContacts) {
-                floatingContacts.style.transition =
-                  "transform 420ms ease, opacity 420ms ease";
-                floatingContacts.style.transform = "translateY(6px)";
-                floatingContacts.style.opacity = "1";
-                floatingContacts.style.pointerEvents = "auto";
-              }
+                // Show floating contact widget
+                const floatingContacts = document.getElementById("floatingContacts");
+                if (floatingContacts) {
+                  floatingContacts.style.transition =
+                    "transform 420ms ease, opacity 420ms ease";
+                  floatingContacts.style.transform = "translateY(6px)";
+                  floatingContacts.style.opacity = "1";
+                  floatingContacts.style.pointerEvents = "auto";
+                }
+              }, 300);
             }
           }, interval); // Smooth animation interval
         }, 500); // Wait 0.5 second before starting
