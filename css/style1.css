@@ -145,9 +145,16 @@ body.hidden {
   gap: 10px;
 }
 
-.navbar-brand img {
-  height: 60px;
-  width: 60px;
+.navbar-brand img:first-child {
+  height: 70px;
+  width: 70px;
+}
+
+.navbar-brand img:last-child {
+  width: 230px;
+  height: auto;
+  max-width: 230px;
+  object-fit: contain;
 }
 
 .nav-link {
