@@ -54,12 +54,15 @@
         }
       }
 
-      @media (max-width: 576px) {
-        .navbar-brand img {
-          max-height: 50px;
-          max-width: 50px;
-        }
-      }
+       @media (max-width: 576px) {
+         .navbar-brand img {
+           display: none;
+         }
+         .navbar-brand span {
+           display: inline !important;
+           font-size: 1.2rem;
+         }
+       }
     </style>
   </head>
 

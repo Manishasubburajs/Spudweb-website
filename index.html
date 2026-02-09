@@ -74,12 +74,19 @@
         }
       }
 
-      @media (max-width: 576px) {
-        .footer-logo {
-          max-height: 30px;
-          max-width: 30px;
-        }
-      }
+       @media (max-width: 576px) {
+         .footer-logo {
+           max-height: 30px;
+           max-width: 30px;
+         }
+         .navbar-brand img {
+           display: none;
+         }
+         .navbar-brand span {
+           display: inline !important;
+           font-size: 1.2rem;
+         }
+       }
     </style>
   </head>
 
