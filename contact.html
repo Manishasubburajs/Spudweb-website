@@ -55,12 +55,14 @@
       }
 
        @media (max-width: 576px) {
-         .navbar-brand img {
-           display: none;
+         .navbar-brand img:first-child {
+           display: none; /* Hide logo on mobile */
          }
-         .navbar-brand span {
-           display: inline !important;
-           font-size: 1.2rem;
+         .navbar-brand img:last-child {
+           width: 180px; /* Smaller size for mobile */
+           height: auto;
+           max-width: 180px;
+           display: block;
          }
        }
     </style>
