@@ -74,12 +74,19 @@
         }
       }
 
-      @media (max-width: 576px) {
-        .footer-logo {
-          max-height: 30px;
-          max-width: 30px;
-        }
-      }
+       @media (max-width: 576px) {
+         .footer-logo {
+           max-height: 30px;
+           max-width: 30px;
+         }
+         .navbar-brand img {
+           display: none;
+         }
+         .navbar-brand span {
+           display: inline !important;
+           font-size: 1.2rem;
+         }
+       }
     </style>
   </head>
 
@@ -88,7 +95,13 @@
     <div id="loader">
       <img src="images/logo/loader-pic.png" alt="Loading..." />
       <p class="loader-text">DIGITAL INFRA</p>
-      <div class="countdown" id="countdown">3</div>
+      <div class="battery-loader">
+        <div class="battery-container">
+          <div class="battery-cap"></div>
+          <div class="battery-level" id="batteryLevel"></div>
+        </div>
+        <div class="battery-text">Loading</div>
+      </div>
     </div>
 
     <!-- Navbar -->
@@ -101,10 +114,10 @@
           alt="Spudweb Logo"
           class="img-fluid me-2"
         />
-        <span class="d-none d-md-inline spudweb-font" style="color: #08739e;">SPUDWEB</span>
+        <span class="d-none d-md-inline spudweb-font" style="color: #004aad;">SPUDWEB</span><sup style="font-size: 0.5em; vertical-align: super; margin-left: 2px; color: #6c757d; font-family: Arial, sans-serif;">&reg;</sup>
       </a>
       <button
-        class="navbar-toggler text-white"
+        class="navbar-toggler text-dark"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNav"
@@ -145,7 +158,7 @@
           <div class="carousel-caption">
             <h1>Organize Your Digital Infrastructure - THE Components</h1>
             <p>
-              <span class="spudweb-font">SPUDWEB</span> stands as a testament to
+              <span class="spudweb-font">SPUDWEB</span><sup style="font-size: 0.5em; vertical-align: super; margin-left: 2px; color: #6c757d; font-family: Arial, sans-serif;">&reg;</sup> stands as a testament to
               what exceptional detailing and technology-driven solutions should
               be—reliable, resilient, future proof, individual customer-focused
               and need-based.<br />
@@ -669,14 +682,14 @@
               <span class="highlight-text">Digital Infra</span>
             </h2>
             <p class="modern-paragraph">
-              <span class="spudweb-font">SPUDWEB</span> specializes in providing
+              <span class="spudweb-font">SPUDWEB</span><sup style="font-size: 0.5em; vertical-align: super; margin-left: 2px; color: #6c757d; font-family: Arial, sans-serif;">&reg;</sup> specializes in providing
               turnkey solutions in IT Infrastructure.Our partnership with widely
               renowned companies has not only equipped us with cutting-edge
               technological solutions but also led the company to immense
               growth. Established in 1996,
-              <span class="spudweb-font">SPUDWEB</span> has gained the trust and
+              <span class="spudweb-font">SPUDWEB</span><sup style="font-size: 0.5em; vertical-align: super; margin-left: 2px; color: #6c757d; font-family: Arial, sans-serif;">&reg;</sup> has gained the trust and
               partnership of many satisfied clients, thanks to our dynamic
-              approach. <span class="spudweb-font">SPUDWEB</span> is the perfect
+              approach.              <span class="spudweb-font">SPUDWEB</span><sup style="font-size: 0.5em; vertical-align: super; margin-left: 2px; color: #6c757d; font-family: Arial, sans-serif;">&reg;</sup> is the perfect
               example of what quality service and technology-based solutions
               should be.
             </p>
@@ -974,7 +987,7 @@
         <div class="row gy-4">
           <!-- Company Info -->
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <h5 class="fw-bold mb-3 text-uppercase spudweb-font">SPUDWEB</h5>
+            <h5 class="fw-bold mb-3 text-uppercase spudweb-font">SPUDWEB<sup style="font-size: 0.5em; vertical-align: super; margin-left: 2px; color: #6c757d; font-family: Arial, sans-serif;">&reg;</sup></h5>
             <p class="small">
               Empowering businesses through innovative IT solutions, digital
               transformation, and secure infrastructure services.
@@ -1095,7 +1108,7 @@
         <div class="text-center pt-2">
           <p class="mb-0 small">
             © <span id="year"></span>
-            <strong class="spudweb-font">SPUDWEB</strong>. All Rights Reserved.
+            <strong class="spudweb-font">SPUDWEB</strong><sup style="font-size: 0.5em; vertical-align: super; margin-left: 2px; color: #6c757d; font-family: Arial, sans-serif;">&reg;</sup>. All Rights Reserved.
             | spudweb.in
           </p>
         </div>
@@ -1291,36 +1304,57 @@
 
     <!-- Loader Script -->
     <script>
-      window.addEventListener("DOMContentLoaded", function () {
-        const countdownElement = document.getElementById("countdown");
-        let count = 3;
-
-        // Set initial value after DOM is loaded to ensure correct styling
-        countdownElement.textContent = count;
-
-        // Start countdown after 1 second
+        window.addEventListener("DOMContentLoaded", function () {
+        // Start battery loading animation after 0.5 second
         setTimeout(function() {
-          const countdownInterval = setInterval(function () {
-            count--;
-            if (count > 0) {
-              countdownElement.textContent = count;
-            } else {
-              clearInterval(countdownInterval);
-              document.getElementById("loader").style.display = "none";
-              document.body.classList.remove("loading");
-
-              // Show floating contact widget
-              const floatingContacts = document.getElementById("floatingContacts");
-              if (floatingContacts) {
-                floatingContacts.style.transition =
-                  "transform 420ms ease, opacity 420ms ease";
-                floatingContacts.style.transform = "translateY(6px)";
-                floatingContacts.style.opacity = "1";
-                floatingContacts.style.pointerEvents = "auto";
+          const batteryLevel = document.getElementById("batteryLevel");
+          let chargeLevel = 0;
+          const totalDuration = 3000; // 3 seconds total duration
+          const interval = 30; // 30ms interval for smooth animation
+          const steps = totalDuration / interval;
+          const chargePerInterval = 100 / steps;
+          let currentStep = 0;
+          
+          const loadingInterval = setInterval(function () {
+            currentStep++;
+            chargeLevel = currentStep * chargePerInterval;
+            
+            if (currentStep <= steps) {
+              batteryLevel.style.width = chargeLevel + "%";
+              
+              // Change battery color based on charge level
+              if (chargeLevel < 30) {
+                batteryLevel.style.background = "linear-gradient(90deg, #ff0000, #cc0000)";
+              } else if (chargeLevel < 70) {
+                batteryLevel.style.background = "linear-gradient(90deg, #ffff00, #cccc00)";
+              } else {
+                batteryLevel.style.background = "linear-gradient(90deg, #00ff00, #00cc00)";
               }
+            } else {
+              // Ensure battery is fully charged when animation completes
+              batteryLevel.style.width = "100%";
+              batteryLevel.style.background = "linear-gradient(90deg, #00ff00, #00cc00)";
+              
+              clearInterval(loadingInterval);
+              
+              // Short delay to show fully charged battery before hiding loader
+              setTimeout(function() {
+                document.getElementById("loader").style.display = "none";
+                document.body.classList.remove("loading");
+
+                // Show floating contact widget
+                const floatingContacts = document.getElementById("floatingContacts");
+                if (floatingContacts) {
+                  floatingContacts.style.transition =
+                    "transform 420ms ease, opacity 420ms ease";
+                  floatingContacts.style.transform = "translateY(6px)";
+                  floatingContacts.style.opacity = "1";
+                  floatingContacts.style.pointerEvents = "auto";
+                }
+              }, 300);
             }
-          }, 1000); // 1 second interval
-        }, 1000); // Wait 1 second before first count change
+          }, interval); // Smooth animation interval
+        }, 500); // Wait 0.5 second before starting
       });
     </script>
   </body>

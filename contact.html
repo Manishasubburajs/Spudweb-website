@@ -54,12 +54,15 @@
         }
       }
 
-      @media (max-width: 576px) {
-        .navbar-brand img {
-          max-height: 50px;
-          max-width: 50px;
-        }
-      }
+       @media (max-width: 576px) {
+         .navbar-brand img {
+           display: none;
+         }
+         .navbar-brand span {
+           display: inline !important;
+           font-size: 1.2rem;
+         }
+       }
     </style>
   </head>
 
@@ -74,7 +77,7 @@
           alt="Spudweb Logo"
           class="img-fluid me-2"
         />
-         <span class="d-none d-md-inline spudweb-font" style="color: #08739e;">SPUDWEB</span>
+         <span class="d-none d-md-inline spudweb-font" style="color: #004aad;">SPUDWEB</span><sup style="font-size: 0.5em; vertical-align: super; margin-left: 2px; color: #6c757d; font-family: Arial, sans-serif;">&reg;</sup>
       </a>
       <button
         class="navbar-toggler text-white"
@@ -240,7 +243,7 @@
         <div class="row gy-4">
           <!-- Company Info -->
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <h5 class="fw-bold mb-3 text-uppercase spudweb-font">SPUDWEB</h5>
+            <h5 class="fw-bold mb-3 text-uppercase spudweb-font">SPUDWEB<sup style="font-size: 0.5em; vertical-align: super; margin-left: 2px; color: #6c757d; font-family: Arial, sans-serif;">&reg;</sup></h5>
             <p class="small">
               Empowering businesses through innovative IT solutions, digital
               transformation, and secure infrastructure services.
@@ -357,7 +360,7 @@
         <div class="text-center pt-2">
           <p class="mb-0 small">
             © <span id="year"></span>
-            <strong class="spudweb-font">SPUDWEB</strong>. All Rights Reserved.
+            <strong class="spudweb-font">SPUDWEB</strong><sup style="font-size: 0.5em; vertical-align: super; margin-left: 2px; color: #6c757d; font-family: Arial, sans-serif;">&reg;</sup>. All Rights Reserved.
             | spudweb.in
           </p>
         </div>
