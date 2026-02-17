@@ -151,10 +151,11 @@ body.hidden {
 }
 
 .navbar-brand img:last-child {
-  width: 230px;
+  width: 280px;
   height: auto;
-  max-width: 230px;
+  max-width: 280px;
   object-fit: contain;
+  padding-bottom: 8px;
 }
 
 .nav-link {
