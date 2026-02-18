@@ -110,16 +110,43 @@
   </head>
 
   <body class="loading">
-    <!-- Loader -->
-    <div id="loader">
-      <img src="images/logo/loader-pic.png" alt="Loading..." />
-      <p class="loader-text">DIGITAL INFRA</p>
-      <div class="battery-loader">
-        <div class="battery-container">
-          <div class="battery-cap"></div>
-          <div class="battery-level" id="batteryLevel"></div>
+    <!-- Banner -->
+    <div id="banner">
+      <div class="banner-overlay"></div>
+      <div class="banner-content">
+        <button class="banner-close" id="bannerClose" onclick="document.getElementById('banner').style.display='none'; document.body.classList.remove('loading');">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="banner-logo">
+          <img src="images/logo/loader-pic.png" alt="Spudweb" />
         </div>
-        <div class="battery-text">Loading</div>
+        <div class="banner-text">
+          <h2>DIGITAL INFRA</h2>
+          <p>SPUDWEB delivers end-to-end IT infrastructure and digital transformation solutions including cloud computing, connectivity, cybersecurity, IT consulting and enterprise platforms to help businesses scale securely and efficiently.</p>
+          <div class="banner-features">
+            <div class="feature-item">
+              <i class="fas fa-cogs"></i>
+              <span>Components</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-cloud"></i>
+              <span>Cloud</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-lightbulb"></i>
+              <span>Consulting</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>CyberSecurity</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-network-wired"></i>
+              <span>Connectivity</span>
+            </div>
+          </div>
+          <a href="under-construction.html" class="banner-button">Explore Services</a>
+        </div>
       </div>
     </div>
 
@@ -1322,58 +1349,32 @@
 
     <!-- Loader Script -->
     <script>
-        window.addEventListener("DOMContentLoaded", function () {
-        // Start battery loading animation after 0.5 second
-        setTimeout(function() {
-          const batteryLevel = document.getElementById("batteryLevel");
-          let chargeLevel = 0;
-          const totalDuration = 3000; // 3 seconds total duration
-          const interval = 30; // 30ms interval for smooth animation
-          const steps = totalDuration / interval;
-          const chargePerInterval = 100 / steps;
-          let currentStep = 0;
-          
-          const loadingInterval = setInterval(function () {
-            currentStep++;
-            chargeLevel = currentStep * chargePerInterval;
-            
-            if (currentStep <= steps) {
-              batteryLevel.style.width = chargeLevel + "%";
-              
-              // Change battery color based on charge level
-              if (chargeLevel < 30) {
-                batteryLevel.style.background = "linear-gradient(90deg, #ff0000, #cc0000)";
-              } else if (chargeLevel < 70) {
-                batteryLevel.style.background = "linear-gradient(90deg, #ffff00, #cccc00)";
-              } else {
-                batteryLevel.style.background = "linear-gradient(90deg, #00ff00, #00cc00)";
-              }
-            } else {
-              // Ensure battery is fully charged when animation completes
-              batteryLevel.style.width = "100%";
-              batteryLevel.style.background = "linear-gradient(90deg, #00ff00, #00cc00)";
-              
-              clearInterval(loadingInterval);
-              
-              // Short delay to show fully charged battery before hiding loader
-              setTimeout(function() {
-                document.getElementById("loader").style.display = "none";
+        // Banner functionality
+        function closeBanner() {
+            const banner = document.getElementById("banner");
+            banner.style.animation = "fadeOut 0.5s ease";
+            setTimeout(function() {
+                banner.style.display = "none";
                 document.body.classList.remove("loading");
-
+                
                 // Show floating contact widget
                 const floatingContacts = document.getElementById("floatingContacts");
                 if (floatingContacts) {
-                  floatingContacts.style.transition =
-                    "transform 420ms ease, opacity 420ms ease";
-                  floatingContacts.style.transform = "translateY(6px)";
-                  floatingContacts.style.opacity = "1";
-                  floatingContacts.style.pointerEvents = "auto";
+                    floatingContacts.style.transition = "transform 420ms ease, opacity 420ms ease";
+                    floatingContacts.style.transform = "translateY(6px)";
+                    floatingContacts.style.opacity = "1";
+                    floatingContacts.style.pointerEvents = "auto";
                 }
-              }, 300);
-            }
-          }, interval); // Smooth animation interval
-        }, 500); // Wait 0.5 second before starting
-      });
+            }, 500);
+        }
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            const banner = document.getElementById("banner");
+            
+            // Show banner when page loads
+            banner.style.display = "flex";
+            document.body.classList.add("loading");
+        });
     </script>
   </body>
 </html>
