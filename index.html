@@ -1368,12 +1368,13 @@
             }, 500);
         }
         
-        document.addEventListener("DOMContentLoaded", function() {
+        // Ensure banner is visible when page loads
+        window.addEventListener("load", function() {
             const banner = document.getElementById("banner");
-            
-            // Show banner when page loads
-            banner.style.display = "flex";
-            document.body.classList.add("loading");
+            setTimeout(function() {
+                banner.style.display = "flex";
+                document.body.classList.add("loading");
+            }, 100);
         });
     </script>
   </body>
