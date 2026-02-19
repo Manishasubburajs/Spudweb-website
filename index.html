@@ -42,42 +42,59 @@
       }
 
       /* Responsive logo sizing */
-      .navbar-brand img {
-        max-height: 60px;
-        max-width: 60px;
+      .navbar-brand img:first-child {
+        height: 70px;
+        width: 70px;
+      }
+
+      .navbar-brand img:last-child {
+        width: 280px;
+        height: auto;
+        max-width: 280px;
+        object-fit: contain;
       }
 
       @media (max-width: 768px) {
-        .navbar-brand img {
-          max-height: 60px;
-          max-width: 60px;
+        .navbar-brand img:first-child {
+          height: 60px;
+          width: 60px;
+        }
+        
+        .navbar-brand img:last-child {
+          width: 230px;
+          max-width: 230px;
         }
       }
 
       @media (max-width: 576px) {
-        .navbar-brand img {
-          max-height: 50px;
-          max-width: 50px;
+        .navbar-brand img:first-child {
+          height: 50px;
+          width: 50px;
+        }
+        
+        .navbar-brand img:last-child {
+          width: 180px;
+          max-width: 180px;
         }
       }
 
       /* Footer logo responsiveness */
       .footer-logo {
-        max-height: 40px;
-        max-width: 40px;
+        max-height: 180px;
+        max-width: 180px;
       }
 
       @media (max-width: 768px) {
         .footer-logo {
-          max-height: 35px;
-          max-width: 35px;
+          max-height: 140px;
+          max-width: 140px;
         }
       }
 
        @media (max-width: 576px) {
-         .footer-logo {
-           max-height: 30px;
-           max-width: 30px;
+          .footer-logo {
+            max-height: 100px;
+            max-width: 100px;
          }
          .navbar-brand img:first-child {
            display: none; /* Hide logo on mobile */
@@ -93,16 +110,54 @@
   </head>
 
   <body class="loading">
-    <!-- Loader -->
-    <div id="loader">
-      <img src="images/logo/loader-pic.png" alt="Loading..." />
-      <p class="loader-text">DIGITAL INFRA</p>
-      <div class="battery-loader">
-        <div class="battery-container">
-          <div class="battery-cap"></div>
-          <div class="battery-level" id="batteryLevel"></div>
+    <!-- Banner -->
+    <div id="banner">
+      <div class="banner-overlay"></div>
+      <div class="banner-content">
+        <button class="banner-close" id="bannerClose">
+          <i class="fas fa-times"></i>
+        </button>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+          $(document).ready(function() {
+            $('#bannerClose').on('click', function() {
+              console.log('Close button clicked');
+              $('#banner').fadeOut(300);
+              $('body').removeClass('loading');
+            });
+          });
+        </script>
+        <div class="banner-logo">
+          <img src="images/logo/loader-pic.png" alt="Spudweb" />
         </div>
-        <div class="battery-text">Loading</div>
+        <div class="banner-text">
+          <h2><span class="spudweb-font">SPUDWEB</span><sup style="font-size: 0.5em; vertical-align: super; margin-left: 2px; color: #6c757d; font-family: Arial, sans-serif;">&reg;</sup> - DIGITAL INFRA</h2>
+          <p>We delivers end-to-end IT infrastructure and digital transformation solutions including cloud computing, connectivity, cybersecurity, IT consulting and enterprise platforms to help businesses scale securely and efficiently.</p>
+          <div class="banner-features">
+            <div class="feature-item">
+              <i class="fas fa-cogs"></i>
+              <span>Components</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-cloud"></i>
+              <span>Cloud</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-lightbulb"></i>
+              <span>Consulting</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>CyberSecurity</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-network-wired"></i>
+              <span>Connectivity</span>
+            </div>
+          </div>
+          <a href="under-construction.html" class="banner-button">Explore Services</a>
+        </div>
       </div>
     </div>
 
@@ -110,18 +165,13 @@
     <nav
       class="navbar navbar-expand-lg fixed-top d-flex justify-content-between align-items-center px-3"
     >
-       <a class="navbar-brand d-flex align-items-center" href="#">
-        <img
-          src="images/logo/Spudweb Logo.png"
-          alt="Spudweb Logo"
-          class="img-fluid me-2"
-        />
-        <img
-          src="images/logo/Spudweb Name.png"
-          alt="Spudweb Name"
-          class="img-fluid"
-        />
-      </a>
+        <a class="navbar-brand d-flex align-items-center" href="#">
+         <img
+           src="images/logo/Spudweb Name.png"
+           alt="Spudweb Name"
+           class="img-fluid"
+         />
+       </a>
       <button
         class="navbar-toggler text-dark"
         type="button"
@@ -140,6 +190,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="under-construction.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="under-construction-jobs.html">Jobs</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
@@ -838,7 +891,7 @@
           <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="solution-card" data-target="consulting">
               <div class="card-header">
-                <h4>IT Consulting</h4>
+                <h4>Consulting</h4>
                 <span class="toggle-icon">↓</span>
               </div>
               <div class="solution-content" id="consulting-content">
@@ -993,11 +1046,7 @@
         <div class="row gy-4">
           <!-- Company Info -->
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <h5 class="fw-bold mb-3 text-uppercase spudweb-font">SPUDWEB<sup style="font-size: 0.5em; vertical-align: super; margin-left: 2px; color: #6c757d; font-family: Arial, sans-serif;">&reg;</sup></h5>
-            <p class="small">
-              Empowering businesses through innovative IT solutions, digital
-              transformation, and secure infrastructure services.
-            </p>
+            <img src="images/logo/Spudweb Logo.png" alt="Spudweb Logo" class="footer-logo mb-3">
             <!-- Social Media Icons -->
             <!-- Footer Social Media Section -->
             <div class="social-media mt-3">
@@ -1060,13 +1109,14 @@
                   >Services</a
                 >
               </li>
+              <li><a href="under-construction-jobs.html" class="footer-link">Jobs</a></li>
               <li><a href="contact.html" class="footer-link">Contact</a></li>
             </ul>
           </div>
 
-          <!-- IT Solutions -->
+          <!-- Services -->
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <h5 class="fw-bold mb-3 text-uppercase">IT Solutions</h5>
+            <h5 class="fw-bold mb-3 text-uppercase">Services</h5>
             <ul class="list-unstyled">
               <li>
                 <a href="" class="footer-link">Components</a>
@@ -1100,8 +1150,8 @@
               </li>
               <li class="mb-2">
                 <i class="fa fa-envelope me-2 text-info"></i>
-                <a href="mailto:info@spudweb.in" class="footer-link"
-                  >info@spudweb.in</a
+                <a href="mailto:ask@spudweb.in" class="footer-link"
+                  >ask@spudweb.in</a
                 >
               </li>
             </ul>
@@ -1149,10 +1199,10 @@
         <div class="contact-pill" aria-hidden="true">
           <a
             class="contact-link"
-            href="mailto:info@spudweb.in"
+            href="mailto:ask@spudweb.in"
             style="color: inherit; text-decoration: none"
           >
-            info@spudweb.in
+            ask@spudweb.in
           </a>
         </div>
         <button class="float-btn" aria-label="Email us" type="button">
@@ -1310,58 +1360,33 @@
 
     <!-- Loader Script -->
     <script>
-        window.addEventListener("DOMContentLoaded", function () {
-        // Start battery loading animation after 0.5 second
-        setTimeout(function() {
-          const batteryLevel = document.getElementById("batteryLevel");
-          let chargeLevel = 0;
-          const totalDuration = 3000; // 3 seconds total duration
-          const interval = 30; // 30ms interval for smooth animation
-          const steps = totalDuration / interval;
-          const chargePerInterval = 100 / steps;
-          let currentStep = 0;
-          
-          const loadingInterval = setInterval(function () {
-            currentStep++;
-            chargeLevel = currentStep * chargePerInterval;
-            
-            if (currentStep <= steps) {
-              batteryLevel.style.width = chargeLevel + "%";
-              
-              // Change battery color based on charge level
-              if (chargeLevel < 30) {
-                batteryLevel.style.background = "linear-gradient(90deg, #ff0000, #cc0000)";
-              } else if (chargeLevel < 70) {
-                batteryLevel.style.background = "linear-gradient(90deg, #ffff00, #cccc00)";
-              } else {
-                batteryLevel.style.background = "linear-gradient(90deg, #00ff00, #00cc00)";
-              }
-            } else {
-              // Ensure battery is fully charged when animation completes
-              batteryLevel.style.width = "100%";
-              batteryLevel.style.background = "linear-gradient(90deg, #00ff00, #00cc00)";
-              
-              clearInterval(loadingInterval);
-              
-              // Short delay to show fully charged battery before hiding loader
-              setTimeout(function() {
-                document.getElementById("loader").style.display = "none";
+        // Banner functionality
+        function closeBanner() {
+            const banner = document.getElementById("banner");
+            banner.style.animation = "fadeOut 0.5s ease";
+            setTimeout(function() {
+                banner.style.display = "none";
                 document.body.classList.remove("loading");
-
+                
                 // Show floating contact widget
                 const floatingContacts = document.getElementById("floatingContacts");
                 if (floatingContacts) {
-                  floatingContacts.style.transition =
-                    "transform 420ms ease, opacity 420ms ease";
-                  floatingContacts.style.transform = "translateY(6px)";
-                  floatingContacts.style.opacity = "1";
-                  floatingContacts.style.pointerEvents = "auto";
+                    floatingContacts.style.transition = "transform 420ms ease, opacity 420ms ease";
+                    floatingContacts.style.transform = "translateY(6px)";
+                    floatingContacts.style.opacity = "1";
+                    floatingContacts.style.pointerEvents = "auto";
                 }
-              }, 300);
-            }
-          }, interval); // Smooth animation interval
-        }, 500); // Wait 0.5 second before starting
-      });
+            }, 500);
+        }
+        
+        // Ensure banner is visible when page loads
+        window.addEventListener("load", function() {
+            const banner = document.getElementById("banner");
+            setTimeout(function() {
+                banner.style.display = "flex";
+                document.body.classList.add("loading");
+            }, 100);
+        });
     </script>
   </body>
 </html>

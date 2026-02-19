@@ -248,5 +248,15 @@
 
 
 
+	// Banner close functionality
+	var bannerClose = function() {
+		$('#bannerClose').on('click', function(e) {
+			e.preventDefault();
+			$('#banner').fadeOut(300);
+			$('body').removeClass('loading');
+		});
+	};
+	bannerClose();
+
 })(jQuery);
 
