@@ -114,9 +114,20 @@
     <div id="banner">
       <div class="banner-overlay"></div>
       <div class="banner-content">
-        <button class="banner-close" id="bannerClose" onclick="document.getElementById('banner').style.display='none'; document.body.classList.remove('loading');">
+        <button class="banner-close" id="bannerClose">
           <i class="fas fa-times"></i>
         </button>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+          $(document).ready(function() {
+            $('#bannerClose').on('click', function() {
+              console.log('Close button clicked');
+              $('#banner').fadeOut(300);
+              $('body').removeClass('loading');
+            });
+          });
+        </script>
         <div class="banner-logo">
           <img src="images/logo/loader-pic.png" alt="Spudweb" />
         </div>
