@@ -126,11 +126,17 @@
               $('#banner').fadeOut(300);
               $('body').removeClass('loading');
             });
+            
+            // Auto-close banner after 5 seconds
+            setTimeout(function() {
+              $('#banner').fadeOut(300);
+              $('body').removeClass('loading');
+            }, 5000);
           });
         </script>
         <div class="banner-content-wrapper">
           <div class="banner-text-column">
-            <h2><img src="images/logo/Spudweb Name.png" alt="Spudweb" style="max-height: 50px; width: auto; object-fit: contain;" /><sup style="font-size: 0.5em; vertical-align: super; margin-left: 2px; color: #6c757d; font-family: Arial, sans-serif;">&reg;</sup></h2>
+            <h2><img src="images/logo/Spudweb Name.png" alt="Spudweb" style="max-height: 50px; width: auto; object-fit: contain;" /></h2>
             <p class="banner-subtitle">Digital Infrastructure Solutions</p>
             <p class="banner-tagline">End-to-end IT solutions for modern businesses</p>
             <div class="banner-features">
