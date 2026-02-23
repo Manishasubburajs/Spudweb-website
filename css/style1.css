@@ -777,7 +777,7 @@ body.loading .logo-scroll-section {
 /* Extra small phones */
 @media (max-width: 576px) {
   #heroCarousel .carousel-item {
-    height: 60vh;
+    height: 85vh;
   }
 
   .carousel-caption h1 {
@@ -807,15 +807,28 @@ body.loading .logo-scroll-section {
 /* ===== FIX: Center carousel caption for mobile ===== */
 @media (max-width: 576px) {
   .carousel-caption {
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
+    left: 5% !important;
+    top: 30% !important;
     text-align: center !important;
     width: 90%;
+    transform: none !important;
   }
 
   .carousel-caption h1,
   .carousel-caption p {
     text-align: center !important;
+  }
+  
+  .carousel-caption .btn-gradient-box {
+    padding: 8px 20px;
+    font-size: 0.8rem;
+    width: fit-content;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  #heroCarousel .carousel-item {
+    height: 500px !important;
   }
 }
 @media (min-width: 992px) {
@@ -1469,7 +1482,7 @@ footer .fa {
 @media (max-width: 576px) {
   .carousel-caption {
     left: 5%;
-    top: 55%;
+    top: 45%;
   }
   .carousel-caption h1 {
     font-size: 1.6rem;
@@ -1477,9 +1490,12 @@ footer .fa {
   .carousel-caption p {
     font-size: 0.9rem;
   }
-  .btn-inkblue {
+  .btn-inkblue,
+  .btn-gradient-box {
     padding: 8px 20px;
     font-size: 0.8rem;
+    width: fit-content;
+    margin: 0 auto;
   }
   .logo-item {
     height: 55px;
