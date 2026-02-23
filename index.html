@@ -126,6 +126,12 @@
               $('#banner').fadeOut(300);
               $('body').removeClass('loading');
             });
+            
+            // Auto-close banner after 5 seconds
+            setTimeout(function() {
+              $('#banner').fadeOut(300);
+              $('body').removeClass('loading');
+            }, 5000);
           });
         </script>
         <div class="banner-content-wrapper">

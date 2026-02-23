@@ -306,7 +306,7 @@ body.loading .logo-scroll-section {
   
   .banner-logo img {
     max-width: 100%;
-    max-height: 300px;
+    max-height: 200px;
   }
   
   .banner-text h2 {
@@ -349,8 +349,12 @@ body.loading .logo-scroll-section {
   }
   
   .banner-button {
-    padding: 6px 16px;
+    padding: 6px 12px;
     font-size: 0.75rem;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
   }
   
   .banner-close {
