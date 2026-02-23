@@ -54,17 +54,17 @@
         }
       }
 
-       @media (max-width: 576px) {
-         .navbar-brand img:first-child {
-           display: none; /* Hide logo on mobile */
-         }
-         .navbar-brand img:last-child {
-           width: 180px; /* Smaller size for mobile */
-           height: auto;
-           max-width: 180px;
-           display: block;
-         }
-       }
+      @media (max-width: 576px) {
+        .navbar-brand img:first-child {
+          display: none; /* Hide logo on mobile */
+        }
+        .navbar-brand img:last-child {
+          width: 180px; /* Smaller size for mobile */
+          height: auto;
+          max-width: 180px;
+          display: block;
+        }
+      }
     </style>
   </head>
 
@@ -171,72 +171,87 @@
             Send Us a Message
           </h2>
           <div class="row g-5 align-items-stretch">
-           <!-- Contact Form (Right Side) -->
-<div class="col-lg-6" data-aos="fade-left">
-  <div class="contact-form">
-    
-    <form action="https://api.web3forms.com/submit" method="POST">
+            <!-- Contact Form (Right Side) -->
+            <div class="col-lg-6" data-aos="fade-left">
+              <div class="contact-form">
+                <form id="contactForm" class="needs-validation" novalidate>
+                  <!-- Web3Forms Hidden Fields -->
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="2e312a45-2fd8-45a3-94e8-86b4452a9494"
+                  />
+                  <input type="hidden" name="redirect" value="false" />
+                  <input
+                    type="hidden"
+                    name="from_name"
+                    value="SPUDWEB - Enquiry Form"
+                  />
 
-      <!-- Web3Forms Access Key -->
-      <input type="hidden" name="access_key" value="66d04650-addf-444b-9a2f-146d3aa8d304">
+                  <!-- Name -->
+                  <div class="mb-3">
+                    <label class="form-label fw-semibold">Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      required
+                    />
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
 
-      <!-- Optional: Customize Email Subject -->
-      <input type="hidden" name="from_name" value="SPUDWEB- Enquiry Form">
+                  <!-- Email -->
+                  <div class="mb-3">
+                    <label class="form-label fw-semibold">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please enter a valid email.
+                    </div>
+                  </div>
 
-      <div class="mb-3">
-        <label class="form-label fw-semibold">Name</label>
-        <input
-          type="text"
-          name="name"
-          class="form-control"
-          placeholder="Enter your name"
-          required
-        />
-      </div>
+                  <!-- Subject -->
+                  <div class="mb-3">
+                    <label class="form-label fw-semibold">Subject</label>
+                    <input
+                      type="text"
+                      name="subject"
+                      class="form-control"
+                      required
+                    />
+                    <div class="invalid-feedback">Please enter subject.</div>
+                  </div>
 
-      <div class="mb-3">
-        <label class="form-label fw-semibold">Email</label>
-        <input
-          type="email"
-          name="email"
-          class="form-control"
-          placeholder="Enter your email"
-          required
-        />
-      </div>
+                  <!-- Message -->
+                  <div class="mb-3">
+                    <label class="form-label fw-semibold">Message</label>
+                    <textarea
+                      name="message"
+                      class="form-control"
+                      rows="4"
+                      required
+                    ></textarea>
+                    <div class="invalid-feedback">
+                      Please enter your message.
+                    </div>
+                  </div>
 
-      <div class="mb-3">
-        <label class="form-label fw-semibold">Subject</label>
-        <input
-          type="text"
-          name="subject"
-          class="form-control"
-          placeholder="Enter subject"
-          required
-        />
-      </div>
-
-      <div class="mb-3">
-        <label class="form-label fw-semibold">Message</label>
-        <textarea
-          name="message"
-          class="form-control"
-          rows="4"
-          placeholder="Your message..."
-          required
-        ></textarea>
-      </div>
-
-      <div class="text-center">
-        <button type="submit" class="btn btn-gradient mt-2">
-          Send Message
-        </button>
-      </div>
-
-    </form>
-
-  </div>
-</div>
+                  <div class="text-center">
+                    <button
+                      type="submit"
+                      id="submitBtn"
+                      class="btn btn-gradient mt-2"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
 
             <!-- Google Map (Left Side) -->
             <div class="col-lg-6" data-aos="fade-right">
@@ -266,7 +281,11 @@
         <div class="row gy-4">
           <!-- Company Info -->
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <img src="images/logo/Spudweb Logo.png" alt="Spudweb Logo" class="footer-logo mb-3">
+            <img
+              src="images/logo/Spudweb Logo.png"
+              alt="Spudweb Logo"
+              class="footer-logo mb-3"
+            />
             <!-- Social Media Icons -->
             <div class="social-media mt-3">
               <p class="mb-0 d-flex justify-content-center flex-wrap">
@@ -325,7 +344,11 @@
                   >Services</a
                 >
               </li>
-              <li><a href="under-construction-jobs.html" class="footer-link">Jobs</a></li>
+              <li>
+                <a href="under-construction-jobs.html" class="footer-link"
+                  >Jobs</a
+                >
+              </li>
               <li><a href="contact.html" class="footer-link">Contact</a></li>
             </ul>
           </div>
@@ -380,8 +403,17 @@
         <div class="text-center pt-2">
           <p class="mb-0 small">
             © <span id="year"></span>
-            <strong class="spudweb-font">SPUDWEB</strong><sup style="font-size: 0.5em; vertical-align: super; margin-left: 2px; color: #6c757d; font-family: Arial, sans-serif;">&reg;</sup>. All Rights Reserved.
-            | spudweb.in
+            <strong class="spudweb-font">SPUDWEB</strong
+            ><sup
+              style="
+                font-size: 0.5em;
+                vertical-align: super;
+                margin-left: 2px;
+                color: #6c757d;
+                font-family: Arial, sans-serif;
+              "
+              >&reg;</sup
+            >. All Rights Reserved. | spudweb.in
           </p>
         </div>
       </div>
@@ -392,29 +424,51 @@
     </script>
 
     <!-- Thank You Modal -->
-    <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="thankYouModal"
+      tabindex="-1"
+      aria-labelledby="thankYouModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header bg-success text-white">
             <h5 class="modal-title" id="thankYouModalLabel">
               <i class="fas fa-check-circle me-2"></i>Thank You!
             </h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body text-center py-4">
             <div class="mb-4">
-              <i class="fas fa-envelope-open-text text-success" style="font-size: 3rem;"></i>
+              <i
+                class="fas fa-envelope-open-text text-success"
+                style="font-size: 3rem"
+              ></i>
             </div>
             <h4 class="mb-3">Your Message Has Been Sent!</h4>
             <p class="text-muted">
-              Thank you for contacting us. Our team will get back to you shortly.
+              Thank you for contacting us. Our team will get back to you
+              shortly.
             </p>
             <div class="mt-4">
-              <small class="text-secondary">We appreciate your interest in SPUDWEB Digital Infra & Support.</small>
+              <small class="text-secondary"
+                >We appreciate your interest in SPUDWEB Digital Infra &
+                Support.</small
+              >
             </div>
           </div>
           <div class="modal-footer justify-content-center">
-            <button type="button" class="btn btn-success" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-dismiss="modal"
+            >
               Close
             </button>
           </div>
@@ -424,232 +478,51 @@
 
     <!-- Form Validation Script -->
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const contactForm = document.querySelector('form');
-        
-        // Validation functions
-        function validateName(name) {
-          const nameRegex = /^[a-zA-Z\s]+$/;
-          return nameRegex.test(name.trim());
-        }
-        
-        function validateEmail(email) {
-          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-          return emailRegex.test(email.trim());
-        }
-        
-        function validateSubject(subject) {
-          const subjectRegex = /^[a-zA-Z0-9\s.,!?'-]+$/;
-          return subjectRegex.test(subject.trim()) && subject.trim().length > 0;
-        }
-        
-        function validateMessage(message) {
-          return message.trim().length > 0;
-        }
-        
-        function showError(input, message) {
-          const formGroup = input.closest('.mb-3');
-          formGroup.classList.add('was-validated');
-          input.classList.add('is-invalid');
-          
-          // Remove existing error message if any
-          const existingError = formGroup.querySelector('.invalid-feedback');
-          if (existingError) {
-            existingError.remove();
-          }
-          
-          // Create new error message
-          const errorDiv = document.createElement('div');
-          errorDiv.className = 'invalid-feedback';
-          errorDiv.textContent = message;
-          formGroup.appendChild(errorDiv);
-        }
-        
-        function clearErrors(input) {
-          const formGroup = input.closest('.mb-3');
-          formGroup.classList.remove('was-validated');
-          input.classList.remove('is-invalid');
-          input.classList.remove('is-valid');
-          
-          const errorDiv = formGroup.querySelector('.invalid-feedback');
-          if (errorDiv) {
-            errorDiv.remove();
-          }
-        }
-        
-        function markValid(input) {
-          input.classList.remove('is-invalid');
-          input.classList.add('is-valid');
-          
-          const formGroup = input.closest('.mb-3');
-          const errorDiv = formGroup.querySelector('.invalid-feedback');
-          if (errorDiv) {
-            errorDiv.remove();
-          }
-        }
-        
-        // Input event listeners for real-time validation
-        const nameInput = contactForm.querySelector('input[name="name"]');
-        const emailInput = contactForm.querySelector('input[name="email"]');
-        const subjectInput = contactForm.querySelector('input[name="subject"]');
-        const messageInput = contactForm.querySelector('textarea[name="message"]');
-        
-        nameInput.addEventListener('input', function() {
-          clearErrors(this);
-          if (this.value.trim()) {
-            if (validateName(this.value)) {
-              markValid(this);
-            } else {
-              showError(this, 'Name should contain only alphabetic characters and spaces');
-            }
-          }
-        });
-        
-        emailInput.addEventListener('input', function() {
-          clearErrors(this);
-          if (this.value.trim()) {
-            if (validateEmail(this.value)) {
-              markValid(this);
-            } else {
-              showError(this, 'Please enter a valid email address');
-            }
-          }
-        });
-        
-        subjectInput.addEventListener('input', function() {
-          clearErrors(this);
-          if (this.value.trim()) {
-            if (validateSubject(this.value)) {
-              markValid(this);
-            } else {
-              showError(this, 'Subject should contain valid characters');
-            }
-          }
-        });
-        
-        messageInput.addEventListener('input', function() {
-          clearErrors(this);
-          if (this.value.trim()) {
-            if (validateMessage(this.value)) {
-              markValid(this);
-            } else {
-              showError(this, 'Message should not be empty');
-            }
-          }
-        });
-        
-        // Blur event listeners for validation on field leave
-        nameInput.addEventListener('blur', function() {
-          if (!this.value.trim()) {
-            showError(this, 'Name is required');
-          }
-        });
-        
-        emailInput.addEventListener('blur', function() {
-          if (!this.value.trim()) {
-            showError(this, 'Email is required');
-          }
-        });
-        
-        subjectInput.addEventListener('blur', function() {
-          if (!this.value.trim()) {
-            showError(this, 'Subject is required');
-          }
-        });
-        
-        messageInput.addEventListener('blur', function() {
-          if (!this.value.trim()) {
-            showError(this, 'Message is required');
-          }
-        });
-        
-        contactForm.addEventListener('submit', function(e) {
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("contactForm");
+        const submitBtn = document.getElementById("submitBtn");
+
+        form.addEventListener("submit", function (e) {
           e.preventDefault();
-          
-          // Clear all previous errors
-          const allInputs = contactForm.querySelectorAll('input, textarea');
-          allInputs.forEach(input => clearErrors(input));
-          
-          let isValid = true;
-          
-          // Validate name
-          if (!nameInput.value.trim()) {
-            showError(nameInput, 'Name is required');
-            isValid = false;
-          } else if (!validateName(nameInput.value)) {
-            showError(nameInput, 'Name should contain only alphabetic characters and spaces');
-            isValid = false;
+
+          // Bootstrap Validation
+          if (!form.checkValidity()) {
+            form.classList.add("was-validated");
+            return;
           }
-          
-          // Validate email
-          if (!emailInput.value.trim()) {
-            showError(emailInput, 'Email is required');
-            isValid = false;
-          } else if (!validateEmail(emailInput.value)) {
-            showError(emailInput, 'Please enter a valid email address');
-            isValid = false;
-          }
-          
-          // Validate subject
-          if (!subjectInput.value.trim()) {
-            showError(subjectInput, 'Subject is required');
-            isValid = false;
-          } else if (!validateSubject(subjectInput.value)) {
-            showError(subjectInput, 'Subject should contain valid characters');
-            isValid = false;
-          }
-          
-          // Validate message
-          if (!messageInput.value.trim()) {
-            showError(messageInput, 'Message is required');
-            isValid = false;
-          } else if (!validateMessage(messageInput.value)) {
-            showError(messageInput, 'Message should not be empty');
-            isValid = false;
-          }
-          
-          // If form is valid, submit it
-          if (isValid) {
-            // Show loading state
-            const submitBtn = contactForm.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';
-            submitBtn.disabled = true;
-            
-            // Collect form data
-            const formData = new FormData(contactForm);
-            
-            // Send form data to Web3Forms
-            fetch('https://api.web3forms.com/submit', {
-              method: 'POST',
-              body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
+
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = "Sending...";
+
+          const formData = new FormData(form);
+
+          fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.json())
+            .then((data) => {
               if (data.success) {
-                // Show thank you modal
-                const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+                // Show Bootstrap Modal
+                const thankYouModal = new bootstrap.Modal(
+                  document.getElementById("thankYouModal"),
+                );
                 thankYouModal.show();
-                
-                // Reset form
-                contactForm.reset();
+
+                form.reset();
+                form.classList.remove("was-validated");
               } else {
-                // Show error message
-                alert('Error sending message. Please try again later.');
-                console.error('Form submission error:', data);
+                alert("Submission failed. Please try again.");
               }
             })
-            .catch(error => {
-              // Show error message
-              alert('Error sending message. Please check your internet connection.');
-              console.error('Network error:', error);
+            .catch((error) => {
+              console.error("Error:", error);
+              alert("Something went wrong.");
             })
             .finally(() => {
-              // Restore button state
-              submitBtn.innerHTML = originalText;
               submitBtn.disabled = false;
+              submitBtn.innerHTML = "Send Message";
             });
-          }
         });
       });
     </script>
