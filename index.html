@@ -123,14 +123,12 @@
           $(document).ready(function() {
             $('#bannerClose').on('click', function() {
               console.log('Close button clicked');
-              $('#banner').fadeOut(300);
-              $('body').removeClass('loading');
+              closeBanner();
             });
             
             // Auto-close banner after 5 seconds
             setTimeout(function() {
-              $('#banner').fadeOut(300);
-              $('body').removeClass('loading');
+              closeBanner();
             }, 5000);
           });
         </script>
